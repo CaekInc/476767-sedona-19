@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Александр Лошаков](https://up.htmlacademy.ru/adaptive/19/user/476767).
-* Наставник: `Неизвестно`.
+* Наставник: [Даниил Долинчук](https://htmlacademy.ru/profile/fixten).
 
 ---
 
