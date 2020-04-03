@@ -2,9 +2,103 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>HTML Academy: Седона форма</title>
   </head>
   <body>
+    <header class="page-header">
+      <nav class="header-nav">
+        <a class="header-nav__logo" href="#">
+          <img class="header-nav__logo-image" src="" alt="Sedona logo">
+        </a>
+        <button class="header-nav__toggle" type="button">открыть меню</button>
+        <ul class="header-nav__list site-list">
+          <li class="header-nav__list-item"><a href="#">Главная</a></li>
+          <li class="header-nav__list-item"><a href="#">Фото и видео</a></li>
+          <li class="header-nav__list-item site-list__active"><a href="#">Форма отзыва</a></li>
+          <li class="header-nav__list-item"><a href="#">Html academy</a></li>
+        </ul>
+      </nav>
+    </header>
+
+      <main class="page-main">
+        <h1 class="visually-hidden">форма отзыва</h1>
+        <section class="meeting-logo__small">
+          <h2 class="visually-hidden">добро пожаловать в Седону</h2>
+          <img class="meeting-logo__logo-small" src="" alt="добро пожаловать в Седону">
+        </section>
+
+        <section class="form-slogan site-heading">
+          <h2 class="site-heading__top">оставьте свой отзыв</h2>
+          <p class="site-heading__bottom">помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        </section>
+
+        <form method="get" action="https://echo.htmlacademy.ru" class="form-wrapper">
+          <div class="form-block user-block">
+            <p class="form-block__heading">представтесь:</p>
+            <div class="user-block__wrapper">
+              <div class="user-block__name">
+                <label for="userName" class="form-block__label">имя*</label>
+                <input type="text" name="username" id="" class="form-block__input-text" placeholder="Петр">
+              </div>
+              <div class="user-block__surname">
+                <label for="userSurname" class="form-block__label ">фамилия*</label>
+                <input type="text" name="userSurname" id="" class="form-block__input-text" placeholder="Иванов">
+              </div>
+              <div class="user-block__patron">
+                <label for="userPatron" class="form-block__label ">отчество*</label>
+                <input type="text" name="userPatron" id="" class="form-block__input-text" placeholder="Александрович">
+              </div>
+            </div>
+          </div>
+          <div class="form-block contact-block">
+            <p class="form-block__heading">Контактная информация:</p>
+          </div>
+          <div class="form-block ratings-block">
+            <p class="form-block__heading">ваши общие впечатления:</p>
+          </div>
+          <div class="form-block visited-block">
+            <p class="form-block__heading">посещенные достопримечательности:</p>
+          </div>
+          <div class="form-block review-block">
+            <p class="form-block__heading">опишите свои эмоции</p>
+          </div>
+
+          <button class="form-block__button" type="submit">отпправить отзыв</button>
+
+        </form>
+
+
+
+
+      </main>
+
+      <footer class="footer">
+        <div class="footer__hashtag">
+          <p>#visitsedona</p>
+        </div>
+
+        <div class="footer__links">
+          <ul class="site-list footer__links-list">
+            <li class="list-item footer__links-item">
+              <a class="footer__links-button btn-twitter" href="https://twitter.com/htmlacademy_ru" aria-label="twitter"></a>
+            </li>
+            <li class="list-item footer__links-item">
+              <a class="footer__links-button btn-facebook" href="https://www.facebook.com/htmlacademy" aria-label="facebook"></a>
+            </li>
+            <li class="list-item footer__links-item">
+              <a class="footer__links-button btn-youtube" href="https://www.youtube.com/user/htmlacademyru" aria-label="youtube"></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__develop">
+          <p>разработано</p>
+          <a href="#">
+            <img src="" alt="html academy">
+          </a>
+        </div>
+      </footer>
+
 
 
   </body>

@@ -2,10 +2,138 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>HTML Academy: Седона фотогалерея</title>
   </head>
   <body>
+    <header class="page-header">
+      <nav class="header-nav">
+        <a class="header-nav__logo" href="#">
+          <img class="header-nav__logo-image" src="" alt="Sedona logo">
+        </a>
+        <button class="header-nav__toggle" type="button">открыть меню</button>
+        <ul class="header-nav__list site-list">
+          <li class="header-nav__list-item"><a href="#">Главная</a></li>
+          <li class="header-nav__list-item site-list__active"><a href="#">Фото и видео</a></li>
+          <li class="header-nav__list-item"><a href="#">Форма отзыва</a></li>
+          <li class="header-nav__list-item"><a href="#">Html academy</a></li>
+        </ul>
+      </nav>
+    </header>
 
+      <main class="page-main">
+        <h1 class="visually-hidden">фотогалерея Sedona</h1>
+        <section class="meeting-logo__small">
+          <h2 class="visually-hidden">добро пожаловать в Седону</h2>
+          <img class="meeting-logo__logo-small" src="" alt="добро пожаловать в Седону">
+        </section>
+
+        <section class="photo-slogan site-heading">
+          <h2 class="site-heading__top">фото и видео</h2>
+          <p class="site-heading__bottom">не можете решиться на путешествие из-за курса? фотографии помогут вам забыть о политике и экономике.</p>
+        </section>
+
+        <section class="photo">
+          <h2 class="visually-hidden">фотогалерея сайта</h2>
+          <div class="photo-block">
+            <div class="photo-block__img-wrapper">
+              <img src="" alt="фотография дороги" class="photo-block__img">
+            </div>
+            <div class="photo-block__bottom">
+              <h3 class="photo-block__bottom-heading">неродные просторы</h3>
+              <p class="photo-block__bottom-text">Автор фото: Борис</p>
+              <div class="photo-block__bottom-metric">
+                <button type="button" class="button-like"></button>
+                <p>1350</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="photo-block">
+            <div class="photo-block__img-wrapper">
+              <img src="" alt="фотография кактуса" class="photo-block__img">
+            </div>
+            <div class="photo-block__bottom">
+              <h3 class="photo-block__bottom-heading">местная растительность</h3>
+              <p class="photo-block__bottom-text">Автор фото: Сергей</p>
+              <div class="photo-block__bottom-metric">
+                <button type="button" class="button-like"></button>
+                <p>143</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="photo-block">
+            <div class="photo-block__img-wrapper">
+              <img src="" alt="фотография дороги" class="photo-block__img">
+            </div>
+            <div class="photo-block__bottom">
+              <h3 class="photo-block__bottom-heading">Дорога на Север</h3>
+              <p class="photo-block__bottom-text">Автор фото: Петр</p>
+              <div class="photo-block__bottom-metric">
+                <button type="button" class="button-like"></button>
+                <p>96</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="photo-block">
+            <div class="photo-block__img-wrapper">
+              <img src="" alt="фотография каньона" class="photo-block__img">
+            </div>
+            <div class="photo-block__bottom">
+              <h3 class="photo-block__bottom-heading">мост дьявола</h3>
+              <p class="photo-block__bottom-text">Автор фото: Антон</p>
+              <div class="photo-block__bottom-metric">
+                <button type="button" class="button-like"></button>
+                <p>254</p>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <section class="video">
+          <h2 class="visually-hidden">видеогалерея сайта</h2>
+          <section class="video__slogan site-heading">
+            <h2 class="site-heading__top">все еще сомневаетесь?</h2>
+            <p class="site-heading__bottom">смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          </section>
+          <div class="video__wrapper">
+
+          </div>
+
+
+        </section>
+
+
+      </main>
+
+      <footer class="footer">
+        <div class="footer__hashtag">
+          <p>#visitsedona</p>
+        </div>
+
+        <div class="footer__links">
+          <ul class="site-list footer__links-list">
+            <li class="list-item footer__links-item">
+              <a class="footer__links-button btn-twitter" href="https://twitter.com/htmlacademy_ru" aria-label="twitter"></a>
+            </li>
+            <li class="list-item footer__links-item">
+              <a class="footer__links-button btn-facebook" href="https://www.facebook.com/htmlacademy" aria-label="facebook"></a>
+            </li>
+            <li class="list-item footer__links-item">
+              <a class="footer__links-button btn-youtube" href="https://www.youtube.com/user/htmlacademyru" aria-label="youtube"></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__develop">
+          <p>разработано</p>
+          <a href="#">
+            <img src="" alt="html academy">
+          </a>
+        </div>
+      </footer>
 
   </body>
 </html>
