@@ -3,6 +3,7 @@
 @import "page-header";
 @import "header-nav.scss";
 @import "normalize.scss";
+@import "visually-hidden.scss";
 
 html {
   box-sizing: border-box;
@@ -21,5 +22,15 @@ body {
   margin: 0;
   padding: 0;
   font-family: $font;
+  text-transform: uppercase;
+}
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
