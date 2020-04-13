@@ -67,12 +67,18 @@
           <div class="form-block ratings-block">
             <p class="form-block__heading">ваше общее впечатление:</p>
             <div class="ratings-block__wrapper">
-              <label for="radioPositive">Скорее положительное</label>
-              <input type="radio" name="radioPositive" id="">
-              <label for="radioNegative">Скорее отрицательное</label>
-              <input type="radio" name="radioNegative" id="">
-              <label for="radioNeutral">Затрудняюсь ответить</label>
-              <input type="radio" name="radioNeutral" id="">
+              <div class="ratings-block__container">
+                <input type="radio" name="ratingChoice" id="radioPositive" class="ratings-block__radio">
+                <label for="radioPositive" class="ratings-block__label">Скорее положительное</label>
+              </div>
+              <div class="ratings-block__container">
+                <input type="radio" name="ratingChoice" id="radioNegative" class="ratings-block__radio">
+                <label for="radioNegative" class="ratings-block__label">Скорее отрицательное</label>
+              </div>
+              <div class="ratings-block__container">
+                <input type="radio" name="ratingChoice" id="radioNeutral" class="ratings-block__radio">
+                <label for="radioNeutral" class="ratings-block__label">Затрудняюсь ответить</label>
+              </div>
             </div>
           </div>
           <div class="form-block visited-block">
