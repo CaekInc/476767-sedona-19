@@ -83,9 +83,28 @@
           </div>
           <div class="form-block visited-block">
             <p class="form-block__heading">посещенные достопримечательности:</p>
+            <div class="visited-block__wrapper">
+              <div class="visited-block__container">
+                <input class="visited-block__checkbox" type="checkbox" name="visitedBridge" id="visitedBox">
+                <label class="visited-block__label" for="visitedBridge">Мост Дьявола</label>
+              </div>
+              <div class="visited-block__container">
+                <input class="visited-block__checkbox" type="checkbox" name="visitedMountain" id="visitedBox">
+                <label class="visited-block__label" for="visitedMountain">Гора-Колокол</label>
+              </div>
+              <div class="visited-block__container">
+                <input class="visited-block__checkbox" type="checkbox" name="visitedPark" id="visitedBox">
+                <label class="visited-block__label" for="visitedPark">Слайд-парк</label>
+              </div>
+              <div class="visited-block__container">
+                <input class="visited-block__checkbox" type="checkbox" name="visitedRocks" id="visitedBox">
+                <label class="visited-block__label" for="visitedRocks">Красные скалы</label>
+              </div>
+            </div>
           </div>
           <div class="form-block review-block">
-            <p class="form-block__heading">опишите свои эмоции</p>
+            <p class="form-block__heading">опишите свои эмоции:</p>
+            <textarea name="reviewText" id="reviewText" class="review-block__textarea" placeholder="Опишите подробно все свои восторги"></textarea>
           </div>
 
           <button class="form-block__button" type="submit">отправить отзыв</button>
