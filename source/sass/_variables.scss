@@ -1,0 +1,9 @@
+$tablet-width: 768px;
+$desktop-width: 1200px;
+$font: "PT Sans", "Arial", sans-serif;
+
+@mixin reset-margin {
+  margin: 0;
+  padding: 0;
+}
+

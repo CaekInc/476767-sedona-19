@@ -1,0 +1,16 @@
+.site-heading {
+  text-align: center;
+  font-family: $font;
+}
+
+.site-heading__top {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.44;
+  color: $black-color;
+}
+
+.site-heading__bottom {
+  font-size: 14px;
+  color: $grey-color;
+}

@@ -1,0 +1,37 @@
+.main-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-form__top {
+  margin: 0 auto;
+  width: 260px;
+}
+
+.main-form__top .site-heading__top {
+  font-size: 21px;
+}
+
+.main-form__top .site-heading__bottom {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.main-form__button {
+  width: 280px;
+  height: 58px;
+  background-color: $blue-color;
+  margin: 0 auto;
+  font-size: 21px;
+  font-weight: bold;
+  color: $white-color;
+  text-transform: uppercase;
+}
+
+.main-form__map {
+  background-color: $blue-color;
+  background-image: url(../img/bg-map-mobile@1x.jpg);
+  background-size: contain;
+  height: 350px;
+  min-width: 320px;
+}

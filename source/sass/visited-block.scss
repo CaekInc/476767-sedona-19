@@ -1,0 +1,31 @@
+.visited-block__wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 270px;
+  align-content: space-around;
+}
+
+.visited-block__container {
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+
+  & input {
+    appearance: none;
+    width: 46px;
+    height: 46px;
+    background-color: $biege-color;
+    border: 5px solid $biege-color;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+}
+
+.visited-block__label {
+  margin-left: 29px;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: none;
+}
+
