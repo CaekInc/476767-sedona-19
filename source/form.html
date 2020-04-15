@@ -2,150 +2,152 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона форма</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
-      <nav class="header-nav">
-        <a class="header-nav__logo" href="#">
-          <img class="header-nav__logo-image" src="/img/logo-sedona-mobile.svg" alt="Sedona logo">
-        </a>
-        <button class="header-nav__toggle" type="button">открыть меню</button>
-        <ul class="header-nav__list site-list">
-          <li class="header-nav__list-item site-list__item"><a href="index.html">Главная</a></li>
-          <li class="header-nav__list-item site-list__item"><a href="photo.html">Фото и видео</a></li>
-          <li class="header-nav__list-item site-list__active"><a href="#">Форма отзыва</a></li>
-          <li class="header-nav__list-item site-list__item"><a href="#">Html academy</a></li>
-        </ul>
-      </nav>
-    </header>
-
-      <main class="page-main">
-        <h1 class="visually-hidden">форма отзыва</h1>
-        <section class="meeting-small">
-          <h2 class="visually-hidden">добро пожаловать в Седону</h2>
-          <img class="meeting-small__logo" src="/img/text-sedona.svg" alt="добро пожаловать в Седону">
-        </section>
-
-        <section class="form-page__heading site-heading">
-          <h2 class="site-heading__top">оставьте свой отзыв</h2>
-          <p class="site-heading__bottom">помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-        </section>
-
-        <form method="get" action="https://echo.htmlacademy.ru" class="form-wrapper">
-          <div class="form-block user-block">
-            <p class="form-block__heading">представьтесь:</p>
-            <div class="user-block__wrapper">
-              <div class="user-block__name">
-                <label for="userName" class="form-block__label">имя*:</label>
-                <input type="text" name="username" id="" class="form-block__input-text" placeholder="Петр">
-              </div>
-              <div class="user-block__surname">
-                <label for="userSurname" class="form-block__label ">фамилия*:</label>
-                <input type="text" name="userSurname" id="" class="form-block__input-text" placeholder="Иванов">
-              </div>
-              <div class="user-block__patron">
-                <label for="userPatron" class="form-block__label ">отчество:</label>
-                <input type="text" name="userPatron" id="" class="form-block__input-text" placeholder="Александрович">
-              </div>
-            </div>
-          </div>
-          <div class="form-block contact-block">
-            <p class="form-block__heading">Контактная информация:</p>
-            <div class="contact-block__wrapper">
-              <div class="contact-block__telephone">
-                <label for="userTelephone" class="form-block__label">контактный телефон*:</label>
-                <input type="tel" name="userTelephone" class="contact-block__telephone-input form-block__input-text" placeholder="Введите телефон">
-              </div>
-              <div class="contact-block__email">
-                <label for="userEmail" class="form-block__label">электронная почта*:</label>
-                <input type="email" name="userEmail" class="contact-block__email-input form-block__input-text" placeholder="Введите e-mail">
-              </div>
-            </div>
-          </div>
-          <div class="form-block ratings-block">
-            <p class="form-block__heading">ваше общее впечатление:</p>
-            <div class="ratings-block__wrapper">
-              <div class="ratings-block__container">
-                <input type="radio" name="ratingChoice" id="radioPositive" class="ratings-block__radio">
-                <label for="radioPositive" class="ratings-block__label">Скорее положительное</label>
-              </div>
-              <div class="ratings-block__container">
-                <input type="radio" name="ratingChoice" id="radioNegative" class="ratings-block__radio">
-                <label for="radioNegative" class="ratings-block__label">Скорее отрицательное</label>
-              </div>
-              <div class="ratings-block__container">
-                <input type="radio" name="ratingChoice" id="radioNeutral" class="ratings-block__radio">
-                <label for="radioNeutral" class="ratings-block__label">Затрудняюсь ответить</label>
-              </div>
-            </div>
-          </div>
-          <div class="form-block visited-block">
-            <p class="form-block__heading">посещенные достопримечательности:</p>
-            <div class="visited-block__wrapper">
-              <div class="visited-block__container">
-                <input class="visited-block__checkbox" type="checkbox" name="visitedBridge" id="visitedBox">
-                <label class="visited-block__label" for="visitedBridge">Мост Дьявола</label>
-              </div>
-              <div class="visited-block__container">
-                <input class="visited-block__checkbox" type="checkbox" name="visitedMountain" id="visitedBox">
-                <label class="visited-block__label" for="visitedMountain">Гора-Колокол</label>
-              </div>
-              <div class="visited-block__container">
-                <input class="visited-block__checkbox" type="checkbox" name="visitedPark" id="visitedBox">
-                <label class="visited-block__label" for="visitedPark">Слайд-парк</label>
-              </div>
-              <div class="visited-block__container">
-                <input class="visited-block__checkbox" type="checkbox" name="visitedRocks" id="visitedBox">
-                <label class="visited-block__label" for="visitedRocks">Красные скалы</label>
-              </div>
-            </div>
-          </div>
-          <div class="form-block review-block">
-            <p class="form-block__heading">опишите свои эмоции:</p>
-            <textarea name="reviewText" id="reviewText" class="review-block__textarea" placeholder="Опишите подробно все свои восторги"></textarea>
-          </div>
-
-          <button class="form-block__button" type="submit">отправить отзыв</button>
-
-        </form>
-
-
-
-
-      </main>
-
-      <footer class="footer">
-        <div class="footer__hashtag">
-          <p>#visitsedona</p>
-        </div>
-
-        <div class="footer__links">
-          <ul class="site-list footer__links-list">
-            <li class="site-list__item footer__links-item">
-              <a class="footer__links-button btn-twitter" href="https://twitter.com/htmlacademy_ru" aria-label="twitter"></a>
-            </li>
-            <li class="site-list__item footer__links-item">
-              <a class="footer__links-button btn-facebook" href="https://www.facebook.com/htmlacademy" aria-label="facebook"></a>
-            </li>
-            <li class="site-list__item footer__links-item">
-              <a class="footer__links-button btn-youtube" href="https://www.youtube.com/user/htmlacademyru" aria-label="youtube"></a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="footer__develop">
-          <p>разработано</p>
-          <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="html academy">
-            <svg class="footer__develop-img" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26.943px" height="34.09px">
-              <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"/>
-            </svg>
+      <div class="wrapper">
+      <header class="page-header">
+        <nav class="header-nav">
+          <a class="header-nav__logo" href="#">
+            <img class="header-nav__logo-image" src="/img/logo-sedona-mobile.svg" alt="Sedona logo">
           </a>
-        </div>
-      </footer>
+          <button class="header-nav__toggle" type="button">открыть меню</button>
+          <ul class="header-nav__list">
+            <li class="header-nav__list-item"><a href="index.html">Главная</a></li>
+            <li class="header-nav__list-item"><a href="photo.html">Фото и видео</a></li>
+            <li class="header-nav__list-item header-nav__list-item__active"><a href="#">Форма отзыва</a></li>
+            <li class="header-nav__list-item"><a href="#">Html academy</a></li>
+          </ul>
+        </nav>
+      </header>
+
+        <main class="page-main">
+          <h1 class="visually-hidden">форма отзыва</h1>
+          <section class="meeting-small">
+            <h2 class="visually-hidden">добро пожаловать в Седону</h2>
+            <img class="meeting-small__logo" src="/img/text-sedona.svg" alt="добро пожаловать в Седону">
+          </section>
+
+          <section class="form-page__heading site-heading">
+            <h2 class="site-heading__top">оставьте свой отзыв</h2>
+            <p class="site-heading__bottom">помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          </section>
+
+          <form method="get" action="https://echo.htmlacademy.ru" class="form-wrapper">
+            <div class="form-block user-block">
+              <p class="form-block__heading">представьтесь:</p>
+              <div class="user-block__wrapper">
+                <div class="user-block__name">
+                  <label for="userName" class="form-block__label">имя*:</label>
+                  <input type="text" name="username" id="" class="form-block__input-text" placeholder="Петр">
+                </div>
+                <div class="user-block__surname">
+                  <label for="userSurname" class="form-block__label ">фамилия*:</label>
+                  <input type="text" name="userSurname" id="" class="form-block__input-text" placeholder="Иванов">
+                </div>
+                <div class="user-block__patron">
+                  <label for="userPatron" class="form-block__label ">отчество:</label>
+                  <input type="text" name="userPatron" id="" class="form-block__input-text" placeholder="Александрович">
+                </div>
+              </div>
+            </div>
+            <div class="form-block contact-block">
+              <p class="form-block__heading">Контактная информация:</p>
+              <div class="contact-block__wrapper">
+                <div class="contact-block__telephone">
+                  <label for="userTelephone" class="form-block__label">контактный телефон*:</label>
+                  <input type="tel" name="userTelephone" class="contact-block__telephone-input form-block__input-text" placeholder="Введите телефон">
+                </div>
+                <div class="contact-block__email">
+                  <label for="userEmail" class="form-block__label">электронная почта*:</label>
+                  <input type="email" name="userEmail" class="contact-block__email-input form-block__input-text" placeholder="Введите e-mail">
+                </div>
+              </div>
+            </div>
+            <div class="form-block ratings-block">
+              <p class="form-block__heading">ваше общее впечатление:</p>
+              <div class="ratings-block__wrapper">
+                <div class="ratings-block__container">
+                  <input type="radio" name="ratingChoice" id="radioPositive" class="ratings-block__radio">
+                  <label for="radioPositive" class="ratings-block__label">Скорее положительное</label>
+                </div>
+                <div class="ratings-block__container">
+                  <input type="radio" name="ratingChoice" id="radioNegative" class="ratings-block__radio">
+                  <label for="radioNegative" class="ratings-block__label">Скорее отрицательное</label>
+                </div>
+                <div class="ratings-block__container">
+                  <input type="radio" name="ratingChoice" id="radioNeutral" class="ratings-block__radio">
+                  <label for="radioNeutral" class="ratings-block__label">Затрудняюсь ответить</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-block visited-block">
+              <p class="form-block__heading">посещенные достопримечательности:</p>
+              <div class="visited-block__wrapper">
+                <div class="visited-block__container">
+                  <input class="visited-block__checkbox" type="checkbox" name="visitedBridge" id="visitedBox">
+                  <label class="visited-block__label" for="visitedBridge">Мост Дьявола</label>
+                </div>
+                <div class="visited-block__container">
+                  <input class="visited-block__checkbox" type="checkbox" name="visitedMountain" id="visitedBox">
+                  <label class="visited-block__label" for="visitedMountain">Гора-Колокол</label>
+                </div>
+                <div class="visited-block__container">
+                  <input class="visited-block__checkbox" type="checkbox" name="visitedPark" id="visitedBox">
+                  <label class="visited-block__label" for="visitedPark">Слайд-парк</label>
+                </div>
+                <div class="visited-block__container">
+                  <input class="visited-block__checkbox" type="checkbox" name="visitedRocks" id="visitedBox">
+                  <label class="visited-block__label" for="visitedRocks">Красные скалы</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-block review-block">
+              <p class="form-block__heading">опишите свои эмоции:</p>
+              <textarea name="reviewText" id="reviewText" class="review-block__textarea" placeholder="Опишите подробно все свои восторги"></textarea>
+            </div>
+
+            <button class="form-block__button" type="submit">отправить отзыв</button>
+
+          </form>
 
 
 
+
+        </main>
+
+        <footer class="footer">
+          <div class="footer__hashtag">
+            <p>#visitsedona</p>
+          </div>
+
+          <div class="footer__links">
+            <ul class="footer__links-list">
+              <li class="footer__links-item">
+                <a class="footer__links-button btn-twitter" href="https://twitter.com/htmlacademy_ru" aria-label="twitter"></a>
+              </li>
+              <li class="footer__links-item">
+                <a class="footer__links-button btn-facebook" href="https://www.facebook.com/htmlacademy" aria-label="facebook"></a>
+              </li>
+              <li class="footer__links-item">
+                <a class="footer__links-button btn-youtube" href="https://www.youtube.com/user/htmlacademyru" aria-label="youtube"></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__develop">
+            <p>разработано</p>
+            <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="html academy">
+              <svg class="footer__develop-img" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26.943px" height="34.09px">
+                <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"/>
+              </svg>
+            </a>
+          </div>
+        </footer>
+
+
+    </div>
   </body>
 </html>
