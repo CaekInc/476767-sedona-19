@@ -50,13 +50,14 @@
   align-items: center;
   width: 61px;
   justify-content: space-between;
+}
 
-  & p {
+.photo-block__bottom-metric__text {
     font-size: 14px;
     line-height: 24px;
     width: 31px;
-  }
 }
+
 
 .button-like {
   width: 21px;
