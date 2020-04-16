@@ -1,0 +1,16 @@
+.form-heading {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.form-heading__top {
+  font-size: 18px;
+  font-weight: bold;
+  color: $black-color;
+}
+
+.form-heading__bottom {
+  font-size: 14px;
+  color: $grey-color;
+  line-height: 26px;
+}

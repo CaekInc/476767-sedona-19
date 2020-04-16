@@ -1,0 +1,29 @@
+.review-block {
+  justify-content: center;
+}
+
+.review-block__textarea {
+  background-color: $biege-color;
+  border: none;
+  height: 160px;
+  width: 280px;
+  color: $black-color;
+  text-transform: none;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+
+  @include reset-margin;
+  margin-top: 20px;
+  padding: 22px 22px;
+
+  & input {
+    font: $font;
+  }
+
+  &::placeholder {
+    color: $black-color;
+    font: $font;
+  }
+}

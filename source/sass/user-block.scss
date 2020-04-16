@@ -1,0 +1,39 @@
+.user-block__wrapper {
+  margin: 0 20px;
+}
+
+.user-block__heading {
+  margin-bottom: 25px;
+}
+
+.user-block__name {
+  display: flex;
+  align-items: center;
+}
+
+.user-block__input_name {
+  width: 218px;
+  margin-left: 14px;
+}
+
+.user-block__surname {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.user-block__input-surname {
+  margin-left: 13px;
+  width: 180px;
+}
+
+.user-block__patron {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.user-block__input-patron {
+  margin-left: 16px;
+  width: 174px;
+}

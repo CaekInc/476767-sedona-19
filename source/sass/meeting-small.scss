@@ -1,0 +1,23 @@
+.meeting-small {
+  height: 158px;
+  width: 320px;
+  background-image: url(../img/bg-back-mobile@1x.jpg);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 26px;
+    background-image: url(../img/bg-intro-triangle-mobile.svg);
+    margin-top: auto;
+  }
+}
+
+.meeting-small__logo {
+  width: 229px;
+  height: 39px;
+}
+

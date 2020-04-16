@@ -1,0 +1,144 @@
+.advantages__heading {
+  width: 255px;
+  margin: 0 auto;
+}
+
+.advantages__bluecard {
+  width: 320px;
+  height: 191px;
+  background-color: $blue-color;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: $white-color;
+}
+
+.advantages__heading_bluecard {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.44;
+  width: 259px;
+
+  @include reset-margin;
+}
+
+.advantages__text_bluecard {
+  line-height: 1.5;
+  font-size: 14px;
+  width: 259px;
+
+  @include reset-margin;
+}
+
+.advantages__firstcard {
+  height: 211px;
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 37px;
+    background-image: url(../img/bg-triangle.svg);
+  }
+}
+
+.advantages__text_firstcard {
+  width: 275px;
+}
+
+.advantages__image {
+  width: 320px;
+  height: 260px;
+}
+
+// .advantages__whitecard-wrapper {
+
+// }
+
+.advantages__whitecard {
+  height: 133px;
+  text-align: left;
+}
+
+.advantages__heading_whitecard {
+  font-size: 18px;
+  font-weight: bold;
+  color: $black-color;
+  padding-left: 70px;
+}
+
+.advantages__text_whitecard {
+  line-height: 21px;
+  font-size: 14px;
+  color: $grey-color;
+  width: 199px;
+  padding-left: 70px;
+}
+
+.advantages__whitecard-house {
+  background-image: url(../img/icon-house.svg);
+  background-repeat: no-repeat;
+  background-size: 37px 36px;
+  background-position-x: 22px;
+}
+
+.advantages__whitecard-souvenir {
+  background-image: url(../img/icon-gift.svg);
+  background-repeat: no-repeat;
+  background-size: 32px 38px;
+  background-position-x: 22px;
+}
+
+.advantages__whitecard-food {
+  background-image: url(../img/icon-burger.svg);
+  background-repeat: no-repeat;
+  background-size: 40px 35px;
+  background-position-x: 22px;
+}
+
+.advantages__biege-wrapper {
+  min-height: 503px;
+  min-width: 320px;
+  background-color: $biege-color;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.advantages__biegecard {
+  height: 167px;
+  width: 280px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid $grey-color;
+}
+
+.advantages__heading_biegecard {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.44;
+  width: 259px;
+
+  @include reset-margin;
+}
+
+.advantages__text_biegecard {
+  line-height: 1.5;
+  font-size: 14px;
+  width: 238px;
+  color: $grey-color;
+
+  @include reset-margin;
+}
+
+.advantages__lastcard {
+  border-bottom: none;
+}
+
+.advantages__text_lastcard {
+  width: 246px;
+}

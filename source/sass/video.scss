@@ -1,0 +1,19 @@
+.video {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.video__slogan {
+  margin: 0 auto;
+}
+
+.video__slogan-heading {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.video__slogan-text {
+  font-size: 14px;
+  color: $grey-color;
+  width: 236px;
+}
