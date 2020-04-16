@@ -1,16 +1,17 @@
 .user-block__wrapper {
-  margin: 0 20px ;
+  margin: 0 20px;
 }
 
-.user-block .form-block__heading {
+.user-block__heading {
   margin-bottom: 25px;
 }
+
 .user-block__name {
   display: flex;
   align-items: center;
 }
 
-.user-block__name .form-block__input-text {
+.user-block__input_name {
   width: 218px;
   margin-left: 14px;
 }
@@ -21,7 +22,7 @@
   margin: 20px 0;
 }
 
-.user-block__surname .form-block__input-text {
+.user-block__input-surname {
   margin-left: 13px;
   width: 180px;
 }
@@ -32,7 +33,7 @@
   margin-bottom: 25px;
 }
 
-.user-block__patron .form-block__input-text {
+.user-block__input-patron {
   margin-left: 16px;
   width: 174px;
 }

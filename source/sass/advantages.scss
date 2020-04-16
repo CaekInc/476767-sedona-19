@@ -15,7 +15,7 @@
   color: $white-color;
 }
 
-.advantages__bluecard-heading {
+.advantages__heading_bluecard {
   font-size: 18px;
   font-weight: bold;
   line-height: 1.44;
@@ -24,7 +24,7 @@
   @include reset-margin;
 }
 
-.advantages__bluecard-text {
+.advantages__text_bluecard {
   line-height: 1.5;
   font-size: 14px;
   width: 259px;
@@ -32,7 +32,7 @@
   @include reset-margin;
 }
 
-.advantages__bluecard-first {
+.advantages__firstcard {
   height: 211px;
 
   &::before {
@@ -43,7 +43,7 @@
   }
 }
 
-.advantages__bluecard-first__text {
+.advantages__text_firstcard {
   width: 275px;
 }
 
@@ -52,24 +52,23 @@
   height: 260px;
 }
 
-.advantages__whitecard-wrapper {
+// .advantages__whitecard-wrapper {
 
-}
+// }
 
 .advantages__whitecard {
   height: 133px;
   text-align: left;
 }
 
-.advantages__whitecard-heading {
+.advantages__heading_whitecard {
   font-size: 18px;
   font-weight: bold;
   color: $black-color;
   padding-left: 70px;
-
 }
 
-.advantages__whitecard-text {
+.advantages__text_whitecard {
   line-height: 21px;
   font-size: 14px;
   color: $grey-color;
@@ -118,7 +117,7 @@
   border-bottom: 1px solid $grey-color;
 }
 
-.advantages__biegecard-heading {
+.advantages__heading_biegecard {
   font-size: 18px;
   font-weight: bold;
   line-height: 1.44;
@@ -127,7 +126,7 @@
   @include reset-margin;
 }
 
-.advantages__biegecard-text {
+.advantages__text_biegecard {
   line-height: 1.5;
   font-size: 14px;
   width: 238px;
@@ -136,10 +135,10 @@
   @include reset-margin;
 }
 
-.advantages__biegecard-last {
+.advantages__lastcard {
   border-bottom: none;
 }
 
-.advantages__biegecard-last__text {
+.advantages__text_lastcard {
   width: 246px;
 }

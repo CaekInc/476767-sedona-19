@@ -1,20 +1,17 @@
 .main-form {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
-.main-form__top {
-  margin: 0 auto;
-  width: 260px;
-}
-
-.main-form__top .site-heading__top {
+.main-form__heading {
   font-size: 21px;
 }
 
-.main-form__top .site-heading__bottom {
+.main-form__heading_text {
   font-size: 14px;
   line-height: 24px;
+  width: 260px;
 }
 
 .main-form__button {

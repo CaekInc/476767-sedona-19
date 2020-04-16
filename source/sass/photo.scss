@@ -4,7 +4,7 @@
   justify-content: center;
 }
 
-.photo .site-heading__bottom {
+.photo__heading {
   width: 270px;
   font-size: 14px;
   line-height: 24px;
@@ -52,10 +52,10 @@
   justify-content: space-between;
 }
 
-.photo-block__bottom-metric__text {
-    font-size: 14px;
-    line-height: 24px;
-    width: 31px;
+.photo-block__bottom-metric_text {
+  font-size: 14px;
+  line-height: 24px;
+  width: 31px;
 }
 
 
