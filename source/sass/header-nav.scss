@@ -1,13 +1,13 @@
 .header-nav {
   display: flex;
-  min-height: 111px;
+  min-height: 168px;
   min-width: 320px;
   flex-wrap: wrap;
   justify-content: space-around;
+  order: -1;
 }
 
 .header-nav__list {
-  order: -1;
   list-style: none;
   color: $white-color;
   line-height: 2.2px;

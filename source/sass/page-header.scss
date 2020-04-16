@@ -1,6 +1,9 @@
 .page-header {
-  width: 320px;
+  min-width: 320px;
+  min-height: 279px;
   background-color: $white-color;
   display: flex;
   font-family: $font;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
