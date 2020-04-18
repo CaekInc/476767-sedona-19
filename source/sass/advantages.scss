@@ -149,3 +149,62 @@
 .advantages__text_lastcard {
   width: 246px;
 }
+
+@media (min-width: $tablet-width) {
+  .advantages {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .advantages__heading {
+    margin-top: 51px;
+    width: 600px;
+    margin-bottom: 55px;
+  }
+
+  .advantages__image {
+    width: 512px;
+    height: 256px;
+  }
+
+  .advantages__image_pic {
+    width: 512px;
+    height: 256px;
+  }
+
+  .advantages__bluecard {
+    width: 256px;
+    height: 256px;
+  }
+
+  .advantages__heading_bluecard {
+    font-size: 21px;
+    line-height: 26px;
+    width: 149px;
+  }
+
+  .advantages__text_bluecard {
+    width: 167px;
+    line-height: 21px;
+  }
+
+  .advantages__firstcard {
+    &::before {
+      display: none;
+    }
+  }
+
+  .advantages__whitecard-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .advantages__whitecard {
+    height: 330px;
+    width: 256px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}

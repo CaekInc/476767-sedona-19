@@ -14,3 +14,9 @@
   font-size: 14px;
   color: $grey-color;
 }
+
+@media (min-width: $tablet-width) {
+  .site-heading__top {
+    font-size: 21px;
+  }
+}
