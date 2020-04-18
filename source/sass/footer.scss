@@ -35,15 +35,11 @@
 .footer__links-button {
   width: 46px;
   height: 48px;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  &:focus {
-    background-color: $blue-button__down;
-  }
-
-  &:hover {
-    background-color: $blue-button__hover;
-  }
+  @include blue-button_hover;
 }
 
 .footer__develop {

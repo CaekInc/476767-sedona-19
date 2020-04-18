@@ -23,6 +23,10 @@
   font-weight: bold;
   color: $white-color;
   text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+
+  @include blue-button_hover;
 }
 
 .main-form__map {

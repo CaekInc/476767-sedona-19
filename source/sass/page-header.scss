@@ -1,6 +1,6 @@
 .page-header {
   min-width: 320px;
-  min-height: 279px;
+  min-height: 56px;
   background-color: $white-color;
   display: flex;
   font-family: $font;
@@ -24,6 +24,7 @@
 
   height: 21px;
   width: 23px;
+  background-color: $white-color;
   align-self: center;
   border: none;
   fill: $blue-color;
@@ -33,5 +34,19 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-header {
+    width: $tablet-width;
+    min-height: 56px;
+  }
 
+  .page-header__toggle {
+    display: none;
+  }
+
+  .page-header__logo {
+    @include reset-margin;
+
+    margin: 0 auto;
+    margin-top: -56px;
+  }
 }

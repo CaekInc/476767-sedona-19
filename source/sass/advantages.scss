@@ -68,7 +68,10 @@
   font-size: 18px;
   font-weight: bold;
   color: $black-color;
+
+  @include reset-margin;
   padding-left: 70px;
+  padding-top: 13px;
 }
 
 .advantages__text_whitecard {
@@ -84,6 +87,7 @@
   background-repeat: no-repeat;
   background-size: 37px 36px;
   background-position-x: 22px;
+  margin-top: 26px;
 }
 
 .advantages__whitecard-souvenir {

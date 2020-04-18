@@ -20,3 +20,17 @@ $blue-button__disabled: #e5e5e5;
   padding: 0;
 }
 
+@mixin blue-button_hover {
+  &:active {
+    background-color: $blue-button__down;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:hover {
+    background-color: $blue-button__hover;
+  }
+
+  &:disabled {
+    background-color: $blue-button__disabled;
+  }
+}
