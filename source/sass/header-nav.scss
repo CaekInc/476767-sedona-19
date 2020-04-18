@@ -45,23 +45,23 @@
   @include blue-button_hover;
 }
 
-// .header-nav__list-item_active {
-//   &::after {
-//     content: "";
-//     position: absolute;
-//     background-image: url(../img/icon-cross.svg);
-//     background-size: contain;
-//     background-repeat: no-repeat;
-//     width: 23px;
-//     height: 22px;
-//     right: 60px;
-//   }
+.header-nav__list-item_active {
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url(../img/icon-cross.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 23px;
+    height: 22px;
+    right: 60px;
+  }
 
-//   &:hover,
-//   :active {
-//     background-color: $blue-color;
-//   }
-// }
+  &:hover,
+  :active {
+    background-color: $blue-color;
+  }
+}
 
 @media (min-width: $tablet-width) {
   .header-nav {
@@ -99,8 +99,7 @@
 
   .header-nav__list-item_active {
     &::after {
-      width: 0;
-      height: 0;
+      display: none;
     }
   }
 

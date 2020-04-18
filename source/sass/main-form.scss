@@ -37,3 +37,26 @@
   min-width: 320px;
   margin-top: 49px;
 }
+
+@media (min-width: $tablet-width) {
+  .main-form__heading {
+    font-size: 30px;
+  }
+
+  .main-form__heading_text {
+    width: 434px;
+  }
+
+  .main-form__button {
+    width: 458px;
+    height: 58px;
+  }
+
+  .main-form__map {
+    height: 350px;
+    width: $tablet-width;
+    background-image: url(../img/bg-map-tablet@1x.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}

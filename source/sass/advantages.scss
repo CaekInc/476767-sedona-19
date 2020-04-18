@@ -206,5 +206,59 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .advantages__heading_whitecard {
+    @include reset-margin;
+
+    font-size: 21px;
+  }
+
+  .advantages__text_whitecard {
+    @include reset-margin;
+
+    width: 162px;
+  }
+
+  .advantages__whitecard-house {
+    @include reset-margin;
+
+    background-size: 72px 72px;
+    background-position-x: 50%;
+    background-position-y: 15%;
+  }
+
+  .advantages__whitecard-souvenir {
+    background-size: 64px 75px;
+    background-position-x: 50%;
+    background-position-y: 15%;
+    order: 1;
+  }
+
+  .advantages__whitecard-food {
+    background-size: 77px 68px;
+    background-position-x: 50%;
+    background-position-y: 15%;
+  }
+
+  .advantages__biege-wrapper {
+    min-width: $tablet-width;
+    min-height: 256px;
+  }
+
+  .advantages__biegecard {
+    width: 256px;
+    height: 256px;
+    border: none;
+  }
+
+  .advantages__heading_biegecard {
+    font-size: 21px;
+  }
+
+  .advantages__text_biegecard {
+    width: 158px;
   }
 }
