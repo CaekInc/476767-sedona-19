@@ -17,3 +17,17 @@
   color: $grey-color;
   width: 236px;
 }
+
+@media (min-width: $tablet-width) {
+  .video__slogan-heading {
+    font-size: 30px;
+  }
+
+  .video__slogan-text {
+    width: 415px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+}
