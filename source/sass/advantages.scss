@@ -261,4 +261,43 @@
   .advantages__text_biegecard {
     width: 158px;
   }
+
+  .advantages__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__bluecard {
+    flex-direction: column;
+  }
+
+  .advantages__heading_bluecard {
+  }
+
+  .advantages__text_bluecard {
+  }
+  // КОСТЫЛЬ 
+
+  .advantages__image {
+    width: 800px;
+  }
+
+  .advantages__image_pic {
+    width: 800px;
+  }
+
+  .advantages__whitecard {
+    width: 400px;
+  }
+
+  .advantages__biege-wrapper {
+    width: $desktop-width;
+  }
+
+  .advantages__biegecard {
+    width: 400px;
+    flex-direction: column;
+  }
 }
