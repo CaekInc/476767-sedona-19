@@ -85,7 +85,19 @@
   .photo-block__bottom-metric {
     padding-right: 34px;
   }
-// фото поменять
+
+  .photo-block__img-wrapper {
+    @include reset-margin;
+  }
+
+  .photo-block__img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .photo-block__img-first {
+
+  }
 
   .photo-block_first {
     margin-top: 75px;
@@ -115,6 +127,7 @@
   .photo-block__bottom {
     opacity: 0.3;
     margin-top: -80px;
+    background-color: none;
   }
 
   .photo-block__bottom-heading {

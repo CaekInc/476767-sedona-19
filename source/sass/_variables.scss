@@ -13,6 +13,8 @@ $menu-down: rgba (118 99 87, 0.3);
 $blue-button__hover: #669ec0;
 $blue-button__down: #5496bd;
 $blue-button__disabled: #e5e5e5;
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
 
 @mixin reset-margin {
   margin: 0;
