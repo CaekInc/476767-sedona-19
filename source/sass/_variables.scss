@@ -8,15 +8,30 @@ $black-color: #000000;
 $grey-color: #333333;
 $biege-color: #f2f2f2;
 $menu-grey: rgba (0 0 0, 0.3);
-$menu-active: #766357;
 $menu-hover: #766357;
 $menu-down: rgba (118 99 87, 0.3);
 $blue-button__hover: #669ec0;
 $blue-button__down: #5496bd;
 $blue-button__disabled: #e5e5e5;
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
 
 @mixin reset-margin {
   margin: 0;
   padding: 0;
 }
 
+@mixin blue-button_hover {
+  &:active {
+    background-color: $blue-button__down;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:hover {
+    background-color: $blue-button__hover;
+  }
+
+  &:disabled {
+    background-color: $blue-button__disabled;
+  }
+}

@@ -10,10 +10,19 @@
 .video__slogan-heading {
   font-size: 18px;
   font-weight: bold;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .video__slogan-text {
   font-size: 14px;
   color: $grey-color;
   width: 236px;
+
+  @media (min-width: $tablet-width) {
+    width: 415px;
+  }
 }
+

@@ -3,6 +3,14 @@
   flex-wrap: wrap;
   border-top: 1px solid $grey-color;
   min-width: 320px;
+
+  @media (min-width: $tablet-width) {
+
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 .form-block__heading {
@@ -50,4 +58,12 @@
   color: $white-color;
   text-transform: uppercase;
   margin-top: 50px;
+}
+
+@media (min-width: $tablet-width) {
+
+}
+
+@media (min-width: $desktop-width) {
+
 }

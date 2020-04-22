@@ -1,6 +1,54 @@
 .page-header {
-  width: 320px;
+  min-width: 320px;
+  min-height: 56px;
   background-color: $white-color;
   display: flex;
   font-family: $font;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+
+  @media (min-width:$tablet-width) {
+    width: $tablet-width;
+    min-height: 56px;
+  }
+
+  @media (min-width:$desktop-width) {
+    width: $desktop-width;
+  }
+}
+
+.page-header__logo {
+  margin-right: 60px;
+
+  @media (min-width:$tablet-width) {
+    @include reset-margin;
+
+    margin: 0 auto;
+    margin-top: -56px;
+  }
+}
+
+.page-header__logo_image {
+  width: 102px;
+  height: 83px;
+  object-fit: contain;
+  z-index: 2;
+}
+
+.page-header__toggle {
+  @include reset-margin;
+
+  height: 21px;
+  width: 23px;
+  background-color: $white-color;
+  align-self: center;
+  border: none;
+  fill: $blue-color;
+  cursor: pointer;
+  margin-right: 20px;
+  margin-bottom: 30px;
+
+  @media (min-width:$tablet-width) {
+    display: none;
+  }
 }

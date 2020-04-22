@@ -6,6 +6,11 @@
   opacity: 0.9;
   flex-wrap: wrap;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    min-height: 120px;
+  }
 }
 
 .footer__hashtag {
@@ -35,15 +40,11 @@
 .footer__links-button {
   width: 46px;
   height: 48px;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  &:focus {
-    background-color: $blue-button__down;
-  }
-
-  &:hover {
-    background-color: $blue-button__hover;
-  }
+  @include blue-button_hover;
 }
 
 .footer__develop {
@@ -68,5 +69,12 @@
 
   &:hover {
     fill: #bdbbbc;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .footer {
+    flex-direction: row;
+    min-height: 120px;
   }
 }

@@ -8,9 +8,14 @@
   font-weight: bold;
   line-height: 1.44;
   color: $black-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .site-heading__bottom {
   font-size: 14px;
   color: $grey-color;
 }
+
