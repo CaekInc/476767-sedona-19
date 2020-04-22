@@ -6,6 +6,11 @@
   opacity: 0.9;
   flex-wrap: wrap;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    min-height: 120px;
+  }
 }
 
 .footer__hashtag {

@@ -2,6 +2,22 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
+}
+
+.photo__heading {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin-top: 76px;
+    font-size: 30px;
+  }
 }
 
 .photo__heading_text {
@@ -9,30 +25,12 @@
   font-size: 14px;
   line-height: 24px;
   color: $grey-color;
-}
 
-@media (min-width: $tablet-width) {
-  .photo {
-    width: $tablet-width;
-  }
-
-  .photo__heading {
-    width: 100%;
-    margin-top: 76px;
-    font-size: 30px;
-  }
-
-  .photo__heading_text {
+  @media (min-width: $tablet-width) {
     width: 438px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .photo {
-    width: $desktop-width;
-  }
-
-  .photo__heading_text {
+  @media (min-width: $desktop-width) {
     width: 428px;
     margin: 0 10%;
   }

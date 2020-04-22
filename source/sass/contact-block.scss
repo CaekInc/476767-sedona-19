@@ -1,26 +1,51 @@
 .contact-block__wrapper {
   margin: 29px 20px 0;
+
+  @media (min-width: $tablet-width) {
+
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
+
 }
 
 .contact-block__telephone-input {
   width: 258px;
   margin-top: 14px;
-}
 
+  @media (min-width: $tablet-width) {
+
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
+}
 .contact-block__email {
   margin-top: 20px;
   margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 .contact-block__email-input {
   width: 258px;
   margin-top: 14px;
+
+  @media (min-width: $tablet-width) {
+
+  }
+
+  @media (min-width: $desktop-width) {
+
+
 }
-
-@media (min-width: $tablet-width) {
-
-}
-
-@media (min-width: $desktop-width) {
-
 }

@@ -1,6 +1,19 @@
+.advantages {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .advantages__heading {
   width: 255px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 51px;
+    width: 600px;
+    margin-bottom: 55px;
+  }
 }
 
 .advantages__bluecard {
@@ -13,6 +26,15 @@
   align-items: center;
   text-align: center;
   color: $white-color;
+
+  @media (min-width: $tablet-width) {
+    width: 256px;
+    height: 256px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+  }
 }
 
 .advantages__heading_bluecard {
@@ -22,6 +44,12 @@
   width: 259px;
 
   @include reset-margin;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 26px;
+    width: 149px;
+  }
 }
 
 .advantages__text_bluecard {
@@ -30,6 +58,11 @@
   width: 259px;
 
   @include reset-margin;
+
+  @media (min-width: $tablet-width) {
+    width: 167px;
+    line-height: 21px;
+  }
 }
 
 .advantages__firstcard {
@@ -44,24 +77,74 @@
     background-repeat: no-repeat;
     margin-top: -12px;
   }
+
+  @media (min-width: $tablet-width) {
+    height: 256px;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.advantages__whitecard-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .advantages__text_firstcard {
   width: 275px;
+
+  @media (min-width: $tablet-width) {
+    width: 259px;
+  }
 }
 
 .advantages__image {
   width: 320px;
   height: 260px;
+
+  @media (min-width: $tablet-width) {
+    width: 512px;
+    height: 256px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+  }
 }
 
-// .advantages__whitecard-wrapper {
+.advantages__image_pic {
+  @media (min-width: $tablet-width) {
+    width: 512px;
+    height: 256px;
+  }
 
-// }
+  @media (min-width: $desktop-width) {
+    width: 800px;
+  }
+}
 
 .advantages__whitecard {
   height: 133px;
   text-align: left;
+
+  @media (min-width: $tablet-width) {
+    height: 330px;
+    width: 256px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+  }
 }
 
 .advantages__heading_whitecard {
@@ -72,6 +155,12 @@
   @include reset-margin;
   padding-left: 70px;
   padding-top: 13px;
+
+  @media (min-width: $tablet-width) {
+    @include reset-margin;
+
+    font-size: 21px;
+  }
 }
 
 .advantages__text_whitecard {
@@ -80,6 +169,12 @@
   color: $grey-color;
   width: 199px;
   padding-left: 70px;
+
+  @media (min-width: $tablet-width) {
+    @include reset-margin;
+
+    width: 162px;
+  }
 }
 
 .advantages__whitecard-house {
@@ -88,6 +183,14 @@
   background-size: 37px 36px;
   background-position-x: 22px;
   margin-top: 26px;
+
+  @media (min-width: $tablet-width) {
+    @include reset-margin;
+
+    background-size: 72px 72px;
+    background-position-x: 50%;
+    background-position-y: 15%;
+  }
 }
 
 .advantages__whitecard-souvenir {
@@ -95,6 +198,15 @@
   background-repeat: no-repeat;
   background-size: 32px 38px;
   background-position-x: 22px;
+
+  @media (min-width: $tablet-width) {
+    @include reset-margin;
+
+    background-size: 64px 75px;
+    background-position-x: 50%;
+    background-position-y: 15%;
+    order: 1;
+  }
 }
 
 .advantages__whitecard-food {
@@ -102,6 +214,14 @@
   background-repeat: no-repeat;
   background-size: 40px 35px;
   background-position-x: 22px;
+
+  @media (min-width: $tablet-width) {
+    @include reset-margin;
+
+    background-size: 77px 68px;
+    background-position-x: 50%;
+    background-position-y: 15%;
+  }
 }
 
 .advantages__biege-wrapper {
@@ -111,6 +231,15 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    min-width: $tablet-width;
+    min-height: 256px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
 }
 
 .advantages__biegecard {
@@ -122,6 +251,17 @@
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid $grey-color;
+
+  @media (min-width: $tablet-width) {
+    width: 256px;
+    height: 256px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+    flex-direction: column;
+  }
 }
 
 .advantages__heading_biegecard {
@@ -131,6 +271,10 @@
   width: 259px;
 
   @include reset-margin;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .advantages__text_biegecard {
@@ -140,164 +284,24 @@
   color: $grey-color;
 
   @include reset-margin;
+
+  @media (min-width: $tablet-width) {
+    width: 158px;
+  }
 }
 
 .advantages__lastcard {
   border-bottom: none;
 }
 
+
 .advantages__text_lastcard {
   width: 246px;
 }
 
-@media (min-width: $tablet-width) {
-  .advantages {
+.advantages__wrapper {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-  }
-
-  .advantages__heading {
-    margin-top: 51px;
-    width: 600px;
-    margin-bottom: 55px;
-  }
-
-  .advantages__image {
-    width: 512px;
-    height: 256px;
-  }
-
-  .advantages__image_pic {
-    width: 512px;
-    height: 256px;
-  }
-
-  .advantages__bluecard {
-    width: 256px;
-    height: 256px;
-  }
-
-  .advantages__heading_bluecard {
-    font-size: 21px;
-    line-height: 26px;
-    width: 149px;
-  }
-
-  .advantages__text_bluecard {
-    width: 167px;
-    line-height: 21px;
-  }
-
-  .advantages__firstcard {
-    &::before {
-      display: none;
-    }
-  }
-
-  .advantages__whitecard-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .advantages__whitecard {
-    height: 330px;
-    width: 256px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-  }
-
-  .advantages__heading_whitecard {
-    @include reset-margin;
-
-    font-size: 21px;
-  }
-
-  .advantages__text_whitecard {
-    @include reset-margin;
-
-    width: 162px;
-  }
-
-  .advantages__whitecard-house {
-    @include reset-margin;
-
-    background-size: 72px 72px;
-    background-position-x: 50%;
-    background-position-y: 15%;
-  }
-
-  .advantages__whitecard-souvenir {
-    background-size: 64px 75px;
-    background-position-x: 50%;
-    background-position-y: 15%;
-    order: 1;
-  }
-
-  .advantages__whitecard-food {
-    background-size: 77px 68px;
-    background-position-x: 50%;
-    background-position-y: 15%;
-  }
-
-  .advantages__biege-wrapper {
-    min-width: $tablet-width;
-    min-height: 256px;
-  }
-
-  .advantages__biegecard {
-    width: 256px;
-    height: 256px;
-    border: none;
-  }
-
-  .advantages__heading_biegecard {
-    font-size: 21px;
-  }
-
-  .advantages__text_biegecard {
-    width: 158px;
-  }
-
-  .advantages__wrapper {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .advantages__bluecard {
-    flex-direction: column;
-  }
-
-  .advantages__heading_bluecard {
-  }
-
-  .advantages__text_bluecard {
-  }
-  // КОСТЫЛЬ 
-
-  .advantages__image {
-    width: 800px;
-  }
-
-  .advantages__image_pic {
-    width: 800px;
-  }
-
-  .advantages__whitecard {
-    width: 400px;
-  }
-
-  .advantages__biege-wrapper {
-    width: $desktop-width;
-  }
-
-  .advantages__biegecard {
-    width: 400px;
-    flex-direction: column;
   }
 }
