@@ -11,8 +11,26 @@
 
 }
 
-.contact-block__telephone-input {
-  width: 258px;
+.contact-block__telephone {
+  display: flex;
+  flex-wrap: wrap;
+
+  &::after {
+    content: "";
+    width: 58px;
+    height: 58px;
+    background-color: $grey-color_input;
+    display: block;
+    margin-top: auto;
+    background-image: url(../img/icon-phone.svg);
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    background-position: center;
+  }
+}
+
+.contact-block__telephone_input {
+  width: 200px;
   margin-top: 14px;
 
   @media (min-width: $tablet-width) {
@@ -23,9 +41,25 @@
 
   }
 }
+
 .contact-block__email {
   margin-top: 20px;
   margin-bottom: 28px;
+  display: flex;
+  flex-wrap: wrap;
+
+  &::after {
+    content: "";
+    width: 58px;
+    height: 58px;
+    background-color: $grey-color_input;
+    display: block;
+    margin-top: auto;
+    background-image: url(../img/icon-mail.svg);
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-position: center;
+  }
 
   @media (min-width: $tablet-width) {
 
@@ -36,9 +70,10 @@
   }
 }
 
-.contact-block__email-input {
-  width: 258px;
+.contact-block__email_input {
+  width: 200px;
   margin-top: 14px;
+
 
   @media (min-width: $tablet-width) {
 

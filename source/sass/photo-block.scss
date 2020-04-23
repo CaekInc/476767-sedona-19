@@ -91,9 +91,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    opacity: 0.3;
+    // opacity: 0.3;
     margin-top: -80px;
-    background-color: none;
+    background-color: rgba(0,0, 0, 0.3);
+    color: $white-color;
   }
 }
 
@@ -101,12 +102,20 @@
   font-size: 14px;
   color: $black-color;
   font-weight: bold;
+
+  @media (min-width: $desktop-width) {
+    color: $white-color;
+  }
 }
 
 .photo-block__bottom-text {
   font-size: 14px;
   text-transform: none;
   color: $grey-color;
+
+  @media (min-width: $desktop-width) {
+    color: $white-color;
+  }
 }
 
 .photo-block__bottom-metric {
@@ -141,6 +150,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   cursor: pointer;
+  background-color: none;
 
   @include reset-margin;
 }

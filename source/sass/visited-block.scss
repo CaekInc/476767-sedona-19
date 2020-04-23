@@ -29,6 +29,15 @@
   text-transform: none;
 }
 
+.visited-block__checkbox {
+  &:checked {
+    background-image: url(../img/icon-tick.svg);
+    background-repeat: no-repeat;
+    background-size: 24px 16px;
+    background-position: center;
+  }
+}
+
 @media (min-width: $tablet-width) {
 
 }

@@ -12,8 +12,8 @@
 
   & input {
     appearance: none;
-    width: 30px;
-    height: 30px;
+    width: 46px;
+    height: 46px;
     background-color: $biege-color;
     position: relative;
     border-radius: 50px;
@@ -25,6 +25,13 @@
   font-weight: bold;
   text-transform: none;
   margin-left: 27px;
+}
+
+.ratings-block__radio {
+  &:checked {
+    background-color: $black-color;
+    border: 16px solid $biege-color;
+  }
 }
 
 @media (min-width: $tablet-width) {
