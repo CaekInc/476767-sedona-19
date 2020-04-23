@@ -1,21 +1,36 @@
 .form-heading {
   text-align: center;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 70px;
+  }
 }
 
 .form-heading__top {
   font-size: 18px;
   font-weight: bold;
   color: $black-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 .form-heading__bottom {
   font-size: 14px;
   color: $grey-color;
   line-height: 26px;
-}
 
-@media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
+    line-height: 24px;
+    width: 440px;
+    margin: auto;
+}
 
 }
 
