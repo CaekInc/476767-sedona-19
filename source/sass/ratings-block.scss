@@ -1,3 +1,10 @@
+.ratings-block {
+  @media (min-width: $tablet-width) {
+    order: -1;
+    width: 384px;
+  }
+}
+
 .ratings-block__wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -6,6 +13,13 @@
   height: 170px;
   margin-top: 32px;
   margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    @include reset-margin;
+
+    margin-right: 10px;
+    height: 205px;
+  }
 }
 
 .ratings-block__container {
@@ -33,6 +47,18 @@
   &:checked {
     background-color: $black-color;
     border: 16px solid $biege-color;
+  }
+}
+
+.ratings-block__heading {
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    font-size: 21px;
+
+    @include reset-margin;
+
+    margin-bottom: 60px;
+    margin-left: 60px;
   }
 }
 

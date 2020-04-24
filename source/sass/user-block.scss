@@ -1,9 +1,31 @@
+.user-block {
+  @media (min-width: $tablet-width) {
+    width: 383px;
+
+
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
+}
+
 .user-block__wrapper {
   margin: 0 20px;
 }
 
 .user-block__heading {
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    font-size: 21px;
+
+    @include reset-margin;
+
+    margin-bottom: 60px;
+    margin-left: 20px;
+  }
 }
 
 .user-block__name {
