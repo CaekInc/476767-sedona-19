@@ -1,6 +1,7 @@
 .contact-block {
-  @media (min-width: $desktop-width) {
-
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    margin: auto;
   }
 }
 
@@ -8,13 +9,38 @@
   margin: 29px 20px 0;
 
   @media (min-width: $tablet-width) {
-
+    @include reset-margin;
   }
 
   @media (min-width: $desktop-width) {
 
   }
+}
 
+.contact-block__heading {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+
+    &::before {
+      content: "";
+      height: 1px;
+      background-color: $biege-color;
+      position: absolute;
+      width: 130px;
+      left: 15%;
+      margin-top: 10px;
+    }
+
+    &::after {
+      content: "";
+      height: 1px;
+      background-color: $biege-color;
+      position: absolute;
+      width: 130px;
+      right: 15%;
+      margin-top: 10px;
+    }
+  }
 }
 
 .contact-block__telephone {
@@ -33,6 +59,10 @@
     background-size: 18px 18px;
     background-position: center;
   }
+
+  @media (min-width: $tablet-width) {
+    justify-content: center;
+  }
 }
 
 .contact-block__telephone_input {
@@ -40,7 +70,7 @@
   margin-top: 14px;
 
   @media (min-width: $tablet-width) {
-
+    width: 590px;
   }
 
   @media (min-width: $desktop-width) {
@@ -68,7 +98,7 @@
   }
 
   @media (min-width: $tablet-width) {
-
+    justify-content: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -82,11 +112,27 @@
 
 
   @media (min-width: $tablet-width) {
-
+    width: 590px;
   }
 
   @media (min-width: $desktop-width) {
 
 
 }
+}
+
+.contact-block__email_label {
+  @media (min-width: $tablet-width) {
+    padding-right: 10px;
+    margin-right: auto;
+    margin-left: 82px;
+  }
+}
+
+
+.contact-block__telephone_label {
+  @media (min-width: $tablet-width) {
+    margin-right: auto;
+    margin-left: 82px;
+  }
 }

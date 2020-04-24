@@ -2,6 +2,15 @@
   @media (min-width: $tablet-width) {
     order: -1;
     width: 384px;
+
+    &::after {
+      content: "";
+      width: 1px;
+      height: 292px;
+      background-color: $biege-color;
+      left: 50%;
+      position: absolute;
+    }
   }
 }
 

@@ -1,6 +1,7 @@
 .user-block {
   @media (min-width: $tablet-width) {
-    width: 383px;
+    width: 343px;
+    margin-left: 40px;
 
 
   }
@@ -19,7 +20,6 @@
 
   @media (min-width: $tablet-width) {
     text-align: left;
-    font-size: 21px;
 
     @include reset-margin;
 
