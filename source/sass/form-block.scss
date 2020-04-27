@@ -1,7 +1,7 @@
 .form-block {
   display: flex;
   flex-wrap: wrap;
-  border-top: 1px solid $grey-color;
+  border-top: 1px solid $biege-color;
   min-width: 320px;
 
   @media (min-width: $tablet-width) {
@@ -52,6 +52,28 @@
   color: $grey-color;
 }
 
+.form-block__text {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    text-align: right;
+    color: $grey-color;
+    font-size: 14px;
+    display: block;
+  }
+}
+
+.form-block_bottom {
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 7.8%;
+    align-items: baseline;
+    margin-top: 58px;
+    margin-bottom: 61px;
+  }
+}
+
 .form-block__button {
   width: 280px;
   height: 58px;
@@ -63,6 +85,13 @@
   text-transform: uppercase;
   margin-top: 50px;
   margin-bottom: 47px;
+  cursor: pointer;
+
+  @include blue-button_hover;
+
+  @media (min-width: $tablet-width) {
+    @include reset-margin;
+  }
 }
 
 @media (min-width: $tablet-width) {

@@ -1,5 +1,32 @@
 .review-block {
   justify-content: center;
+  flex-wrap: wrap;
+}
+
+.review-block__heading {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+
+    &::before {
+      content: "";
+      height: 1px;
+      background-color: $biege-color;
+      position: absolute;
+      width: 130px;
+      left: 15%;
+      margin-top: 10px;
+    }
+
+    &::after {
+      content: "";
+      height: 1px;
+      background-color: $biege-color;
+      position: absolute;
+      width: 130px;
+      right: 15%;
+      margin-top: 10px;
+    }
+  }
 }
 
 .review-block__textarea {
@@ -26,6 +53,11 @@
     color: $black-color;
     font: $font;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 648px;
+  }
+
 }
 
 @media (min-width: $tablet-width) {
