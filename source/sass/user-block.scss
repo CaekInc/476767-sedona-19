@@ -7,12 +7,18 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 50%;
 
+    @include reset-margin;
   }
 }
 
 .user-block__wrapper {
   margin: 0 20px;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 79px;
+  }
 }
 
 .user-block__heading {
@@ -26,6 +32,11 @@
     margin-bottom: 60px;
     margin-left: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 78px;
+  }
+
 }
 
 .user-block__name {
@@ -36,6 +47,11 @@
 .user-block__input_name {
   width: 218px;
   margin-left: 14px;
+
+  @media (min-width: $desktop-width) {
+    width: 350px;
+  }
+
 }
 
 .user-block__surname {
@@ -47,6 +63,11 @@
 .user-block__input_surname {
   margin-left: 13px;
   width: 180px;
+
+  @media (min-width: $desktop-width) {
+    width: 312px;
+  }
+
 }
 
 .user-block__patron {
@@ -58,6 +79,11 @@
 .user-block__input_patron {
   margin-left: 16px;
   width: 182px;
+
+  @media (min-width: $desktop-width) {
+    width: 314px;
+  }
+
 }
 
 @media (min-width: $tablet-width) {

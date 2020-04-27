@@ -12,6 +12,12 @@
       position: absolute;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    @include reset-margin;
+
+    width: 50%;
+  }
 }
 
 .ratings-block__wrapper {
@@ -28,6 +34,10 @@
 
     margin-right: 10px;
     height: 205px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 216px;
   }
 }
 
@@ -68,6 +78,11 @@
 
     margin-bottom: 60px;
     margin-left: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 200px;
+    margin-bottom: 20px;
   }
 }
 

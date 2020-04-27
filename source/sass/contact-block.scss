@@ -3,6 +3,10 @@
     flex-direction: column;
     margin: auto;
   }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 .contact-block__wrapper {
@@ -41,6 +45,17 @@
       margin-top: 10px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      width: 260px;
+    }
+
+    &::after {
+      width: 260px;
+    }
+
+  }
 }
 
 .contact-block__telephone {
@@ -74,7 +89,7 @@
   }
 
   @media (min-width: $desktop-width) {
-
+    width: 257px;
   }
 }
 
@@ -116,9 +131,8 @@
   }
 
   @media (min-width: $desktop-width) {
-
-
-}
+    width: 258px;
+  }
 }
 
 .contact-block__email_label {
@@ -127,6 +141,10 @@
     margin-right: auto;
     margin-left: 82px;
   }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 
@@ -134,5 +152,9 @@
   @media (min-width: $tablet-width) {
     margin-right: auto;
     margin-left: 82px;
+
+    @media (min-width: $desktop-width) {
+
+    }
   }
 }
