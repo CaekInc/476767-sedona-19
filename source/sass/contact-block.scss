@@ -5,7 +5,7 @@
   }
 
   @media (min-width: $desktop-width) {
-
+    flex-direction: row;
   }
 }
 
@@ -17,7 +17,10 @@
   }
 
   @media (min-width: $desktop-width) {
-
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 
@@ -78,6 +81,14 @@
   @media (min-width: $tablet-width) {
     justify-content: center;
   }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: nowrap;
+    width: 50%;
+    align-items: center;
+
+    @include reset-margin;
+  }
 }
 
 .contact-block__telephone_input {
@@ -89,7 +100,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 257px;
+    width: 235px;
+
+    @include reset-margin;
+    padding-left: 22px;
+
   }
 }
 
@@ -117,7 +132,11 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 50%;
+    flex-wrap: nowrap;
+    align-items: center;
 
+    @include reset-margin;
   }
 }
 
@@ -131,7 +150,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 258px;
+    width: 236px;
+
+    @include reset-margin;
+    padding-left: 22px;
   }
 }
 
@@ -143,7 +165,8 @@
   }
 
   @media (min-width: $desktop-width) {
-
+    @include reset-margin;
+    margin-right: 16px;
   }
 }
 
@@ -154,7 +177,12 @@
     margin-left: 82px;
 
     @media (min-width: $desktop-width) {
+      @include reset-margin;
+      margin-right: 16px;
 
+      & span {
+        display: none;
+      }
     }
   }
 }

@@ -1,3 +1,11 @@
+.visited-block {
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    margin: 0 auto;
+
+  }
+}
+
 .visited-block__wrapper {
   display: flex;
   align-items: center;
@@ -10,6 +18,13 @@
     // width: 500px;
     margin: 0 20%;
     justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    min-height: auto;
+    min-width: $desktop-width;
+    justify-content: space-evenly;
   }
 }
 
@@ -61,6 +76,10 @@
     &:nth-child(2) {
       margin-right: 15px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    @include reset-margin;
   }
 }
 
