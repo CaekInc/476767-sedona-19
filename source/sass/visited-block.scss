@@ -53,6 +53,15 @@
       // margin-top: 10px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      width: 260px;
+    }
+
+    &::after {
+      width: 260px;
+    }
 }
 
 .visited-block__container {

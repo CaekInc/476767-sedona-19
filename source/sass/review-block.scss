@@ -27,6 +27,16 @@
       margin-top: 10px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      width: 260px;
+    }
+
+    &::after {
+      width: 260px;
+    }
+  }
 }
 
 .review-block__textarea {
@@ -58,12 +68,9 @@
     width: 648px;
   }
 
+  @media (min-width: $desktop-width) {
+    width: 960px;
+  }
 }
 
-@media (min-width: $tablet-width) {
 
-}
-
-@media (min-width: $desktop-width) {
-
-}

@@ -72,6 +72,10 @@
     margin-top: 58px;
     margin-bottom: 61px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 10%;
+  }
 }
 
 .form-block__button {
@@ -86,18 +90,15 @@
   margin-top: 50px;
   margin-bottom: 47px;
   cursor: pointer;
+  border: none;
 
   @include blue-button_hover;
 
   @media (min-width: $tablet-width) {
     @include reset-margin;
   }
-}
 
-@media (min-width: $tablet-width) {
-
-}
-
-@media (min-width: $desktop-width) {
-
+  @media (min-width: $desktop-width) {
+    width: 480px;
+  }
 }
