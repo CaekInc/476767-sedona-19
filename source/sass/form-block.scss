@@ -9,7 +9,7 @@
   }
 
   @media (min-width: $desktop-width) {
-
+    min-width: $desktop-width;
   }
 }
 
@@ -75,6 +75,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 10%;
+    width: 100%;
   }
 }
 
