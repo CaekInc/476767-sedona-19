@@ -2,7 +2,6 @@
   @media (min-width: $desktop-width) {
     flex-direction: column;
     margin: 0 auto;
-
   }
 }
 
@@ -62,6 +61,7 @@
     &::after {
       width: 260px;
     }
+  }
 }
 
 .visited-block__container {
@@ -101,17 +101,9 @@
 
 .visited-block__checkbox {
   &:checked {
-    background-image: url(../img/icon-tick.svg);
+    background-image: url("../img/icon-tick.svg");
     background-repeat: no-repeat;
     background-size: 24px 16px;
     background-position: center;
   }
-}
-
-@media (min-width: $tablet-width) {
-
-}
-
-@media (min-width: $desktop-width) {
-
 }

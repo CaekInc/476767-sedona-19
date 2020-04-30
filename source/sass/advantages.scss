@@ -73,7 +73,7 @@
     content: "";
     width: 100%;
     height: 37px;
-    background-image: url(../img/bg-triangle.svg);
+    background-image: url("../img/bg-triangle.svg");
     background-size: contain;
     background-repeat: no-repeat;
     margin-top: -12px;
@@ -179,7 +179,7 @@
 }
 
 .advantages__whitecard-house {
-  background-image: url(../img/icon-house.svg);
+  background-image: url("../img/icon-house.svg");
   background-repeat: no-repeat;
   background-size: 37px 36px;
   background-position-x: 22px;
@@ -195,7 +195,7 @@
 }
 
 .advantages__whitecard-souvenir {
-  background-image: url(../img/icon-gift.svg);
+  background-image: url("../img/icon-gift.svg");
   background-repeat: no-repeat;
   background-size: 32px 38px;
   background-position-x: 22px;
@@ -211,7 +211,7 @@
 }
 
 .advantages__whitecard-food {
-  background-image: url(../img/icon-burger.svg);
+  background-image: url("../img/icon-burger.svg");
   background-repeat: no-repeat;
   background-size: 40px 35px;
   background-position-x: 22px;
