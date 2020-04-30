@@ -59,6 +59,10 @@
   }
 }
 
+.advantages__numbers_bluecard {
+  width: 100%;
+}
+
 .advantages__text_bluecard {
   line-height: 1.5;
   font-size: 14px;
@@ -329,6 +333,14 @@
   @media (min-width: $tablet-width) {
     font-size: 21px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 120px;
+  }
+}
+
+.advantages__number_biegecard {
+  width: 100%;
 }
 
 .advantages__text_biegecard {
