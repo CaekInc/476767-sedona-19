@@ -14,6 +14,12 @@
     width: 600px;
     margin-bottom: 55px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 31px;
+    margin-bottom: 32px;
+    line-height: 33px;
+  }
 }
 
 .advantages__bluecard {
@@ -64,6 +70,10 @@
     width: 167px;
     line-height: 21px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 250px;
+  }
 }
 
 .advantages__firstcard {
@@ -100,6 +110,24 @@
 
   @media (min-width: $tablet-width) {
     width: 259px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 269px;
+  }
+}
+
+.advantages__heading_firstcard {
+  @media (min-width: $desktop-width) {
+    // margin-top: -30px;
+  }
+}
+
+.advantages__numbers_bluecard {
+  @media (min-width: $desktop-width) {
+    @include reset-margin;
+    margin-top: 13px;
+    margin-bottom: 17px;
   }
 }
 
@@ -162,6 +190,11 @@
 
     font-size: 21px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 20.5%;
+    margin-bottom: 20px;
+  }
 }
 
 .advantages__text_whitecard {
@@ -175,6 +208,11 @@
     @include reset-margin;
 
     width: 162px;
+  }
+
+  @media (min-width: $desktop-width) {
+    // margin-bottom: -20.5%;
+    width: 300px;
   }
 }
 
@@ -192,6 +230,11 @@
     background-position-x: 50%;
     background-position-y: 15%;
   }
+
+  @media (min-width: $desktop-width) {
+    // margin-bottom: -20.5%;
+    background-position-y: 25%;
+  }
 }
 
 .advantages__whitecard-souvenir {
@@ -207,6 +250,11 @@
     background-position-x: 50%;
     background-position-y: 15%;
     order: 1;
+
+    @media (min-width: $desktop-width) {
+      // margin-bottom: -20.5%;
+      background-position-y: 23%;
+    }
   }
 }
 
@@ -222,6 +270,11 @@
     background-size: 77px 68px;
     background-position-x: 50%;
     background-position-y: 15%;
+  }
+
+  @media (min-width: $desktop-width) {
+    // margin-bottom: -20.5%;
+    background-position-y: 25%;
   }
 }
 
@@ -304,5 +357,14 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+  }
+}
+
+.advantages__container {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row-reverse;
   }
 }
