@@ -1,5 +1,5 @@
 .meeting {
-  height: 389px;
+  height: 387px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   object-fit: contain;
   background-repeat: no-repeat;
@@ -17,7 +17,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    height: 518px;
+    height: 516px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
 
     &::after {
@@ -41,11 +41,12 @@
   width: 281px;
   height: 214px;
   object-fit: contain;
+  margin-top: 89px;
 
   @media (min-width: $tablet-width) {
     width: 460px;
     height: 350px;
-    padding-top: 50px;
+    padding-top: 63px;
   }
 
   @media (min-width: $desktop-width) {

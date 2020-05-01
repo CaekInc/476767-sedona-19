@@ -8,11 +8,14 @@
 .advantages__heading {
   width: 255px;
   margin: 0 auto;
+  margin-top: 43px;
+  line-height: 33px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 51px;
+    margin-top: 30px;
     width: 600px;
-    margin-bottom: 55px;
+    margin-bottom: 30px;
+    line-height: 37px;
   }
 
   @media (min-width: $desktop-width) {
@@ -21,6 +24,8 @@
     line-height: 33px;
   }
 }
+
+
 
 .advantages__bluecard {
   width: 320px;
@@ -36,10 +41,10 @@
   @media (min-width: $tablet-width) {
     width: 256px;
     height: 256px;
+    flex-direction: column;
   }
 
   @media (min-width: $desktop-width) {
-    flex-direction: column;
     width: 400px;
   }
 }
@@ -62,11 +67,17 @@
 .advantages__numbers_bluecard {
   width: 100%;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     @include reset-margin;
     margin-top: 13px;
     margin-bottom: 17px;
   }
+
+  // @media (min-width: $desktop-width) {
+  //   @include reset-margin;
+  //   margin-top: 13px;
+  //   margin-bottom: 17px;
+  // }
 }
 
 .advantages__text_bluecard {
@@ -119,7 +130,7 @@
   width: 275px;
 
   @media (min-width: $tablet-width) {
-    width: 259px;
+    width: 167px;
   }
 
   @media (min-width: $desktop-width) {
@@ -127,11 +138,11 @@
   }
 }
 
-.advantages__heading_firstcard {
-  @media (min-width: $desktop-width) {
-    // margin-top: -30px;
-  }
-}
+// .advantages__heading_firstcard {
+//   // @media (min-width: $tablet-width) {
+
+//   // }
+// }
 
 .advantages__image {
   width: 320px;
@@ -191,11 +202,12 @@
     @include reset-margin;
 
     font-size: 21px;
+    margin-top: 40%;
+    margin-bottom: 20px;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 20.5%;
-    margin-bottom: 20px;
   }
 }
 
@@ -230,7 +242,7 @@
 
     background-size: 72px 72px;
     background-position-x: 50%;
-    background-position-y: 15%;
+    background-position-y: 24%;
   }
 
   @media (min-width: $desktop-width) {
@@ -250,13 +262,8 @@
 
     background-size: 64px 75px;
     background-position-x: 50%;
-    background-position-y: 15%;
+    background-position-y: 23%;
     order: 1;
-
-    @media (min-width: $desktop-width) {
-      // margin-bottom: -20.5%;
-      background-position-y: 23%;
-    }
   }
 }
 
@@ -271,11 +278,6 @@
 
     background-size: 77px 68px;
     background-position-x: 50%;
-    background-position-y: 15%;
-  }
-
-  @media (min-width: $desktop-width) {
-    // margin-bottom: -20.5%;
     background-position-y: 25%;
   }
 }
@@ -306,17 +308,17 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid $grey-color;
+  border-bottom: 1px solid $biege-color;
 
   @media (min-width: $tablet-width) {
     width: 256px;
     height: 256px;
     border: none;
+    flex-direction: column;
   }
 
   @media (min-width: $desktop-width) {
     width: 400px;
-    flex-direction: column;
   }
 }
 
@@ -330,9 +332,6 @@
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
-  }
-
-  @media (min-width: $desktop-width) {
     width: 120px;
     padding-top: 5px;
     line-height: 26px;
@@ -342,7 +341,7 @@
 .advantages__number_biegecard {
   width: 100%;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     @include reset-margin;
 
     padding-top: 10px;
@@ -375,6 +374,10 @@
 
 .advantages__text_lastcard {
   width: 246px;
+
+  @media (min-width: $tablet-width) {
+    width: 158px;
+  }
 }
 
 .advantages__wrapper {
