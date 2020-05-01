@@ -61,6 +61,12 @@
 
 .advantages__numbers_bluecard {
   width: 100%;
+
+  @media (min-width: $desktop-width) {
+    @include reset-margin;
+    margin-top: 13px;
+    margin-bottom: 17px;
+  }
 }
 
 .advantages__text_bluecard {
@@ -124,14 +130,6 @@
 .advantages__heading_firstcard {
   @media (min-width: $desktop-width) {
     // margin-top: -30px;
-  }
-}
-
-.advantages__numbers_bluecard {
-  @media (min-width: $desktop-width) {
-    @include reset-margin;
-    margin-top: 13px;
-    margin-bottom: 17px;
   }
 }
 
@@ -336,11 +334,20 @@
 
   @media (min-width: $desktop-width) {
     width: 120px;
+    padding-top: 5px;
+    line-height: 26px;
   }
 }
 
 .advantages__number_biegecard {
   width: 100%;
+
+  @media (min-width: $desktop-width) {
+    @include reset-margin;
+
+    padding-top: 10px;
+    padding-bottom: 22px;
+  }
 }
 
 .advantages__text_biegecard {
@@ -353,6 +360,11 @@
 
   @media (min-width: $tablet-width) {
     width: 158px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 283px;
+    padding-bottom: 20px;
   }
 }
 

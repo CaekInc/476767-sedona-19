@@ -19,6 +19,10 @@
   @media (min-width: $tablet-width) {
     font-size: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 50px;
+  }
 }
 
 .main-form__heading_text {
@@ -27,6 +31,10 @@
   width: 260px;
 
   @media (min-width: $tablet-width) {
+    width: 434px;
+  }
+
+  @media (min-width: $desktop-width) {
     width: 434px;
   }
 }
@@ -49,11 +57,15 @@
     width: 458px;
     height: 58px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 29px;
+  }
 }
 
 .main-form__map {
   background-color: $blue-color;
-  background-image: url(../img/bg-map-mobile@1x.jpg);
+  background-image: url("../img/bg-map-mobile@1x.jpg");
   background-size: contain;
   height: 350px;
   min-width: 320px;
@@ -62,13 +74,14 @@
   @media (min-width: $tablet-width) {
     height: 350px;
     width: $tablet-width;
-    background-image: url(../img/bg-map-tablet@1x.jpg);
+    background-image: url("../img/bg-map-tablet@1x.jpg");
     background-size: contain;
     background-repeat: no-repeat;
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 65px;
     width: $desktop-width;
-    background-image: url(../img/bg-map-desktop@1x.jpg);
+    background-image: url("../img/bg-map-desktop@1x.jpg");
   }
 }
