@@ -1,6 +1,7 @@
 .form-heading {
   text-align: center;
   margin: 0 auto;
+  margin-top: 41px;
 
   @media (min-width: $tablet-width) {
     margin-top: 70px;
@@ -25,9 +26,11 @@
 .form-heading__bottom {
   font-size: 14px;
   color: $grey-color;
-  line-height: 26px;
+  line-height: 24px;
+  padding-top: 10px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 0;
     line-height: 24px;
     width: 440px;
     margin: auto;
