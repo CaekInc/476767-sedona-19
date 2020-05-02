@@ -15,8 +15,13 @@
 .photo__heading {
   @media (min-width: $tablet-width) {
     width: 100%;
-    margin-top: 76px;
+    margin-top: 67px;
     font-size: 30px;
+    margin-bottom: 7px;
+
+    @media (min-width: $desktop-width) {
+      margin-top: 105px;
+    }
   }
 }
 
@@ -33,5 +38,6 @@
   @media (min-width: $desktop-width) {
     width: 428px;
     margin: 0 10%;
+    padding-top: 15px;
   }
 }

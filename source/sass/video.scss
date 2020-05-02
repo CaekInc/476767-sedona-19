@@ -5,6 +5,10 @@
 
 .video__slogan {
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 35px;
+  }
 }
 
 .video__slogan-heading {
@@ -23,6 +27,7 @@
 
   @media (min-width: $tablet-width) {
     width: 415px;
+    line-height: 24px;
   }
 }
 

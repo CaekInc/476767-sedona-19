@@ -46,10 +46,12 @@
   @media (min-width: $tablet-width) {
     width: 460px;
     height: 350px;
-    padding-top: 63px;
+    margin-top: 0;
+    padding-top: 75px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 67px;
+    padding-top: 0;
+    margin-top: 78px;
   }
 }
