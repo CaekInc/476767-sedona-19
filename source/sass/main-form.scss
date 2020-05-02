@@ -11,6 +11,7 @@
 
 .main-form__heading {
   font-size: 21px;
+  margin-top: 26px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -43,10 +44,13 @@
   text-transform: uppercase;
   cursor: pointer;
   border: none;
+  margin-top: 20px;
 
   @include blue-button_hover;
 
   @media (min-width: $tablet-width) {
+    @include reset-margin;
+
     width: 458px;
     height: 58px;
   }

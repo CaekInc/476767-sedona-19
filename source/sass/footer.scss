@@ -18,6 +18,8 @@
   font-stretch: normal;
   font-size: 21px;
 
+  @include reset-margin;
+
   @media (min-width: $tablet-width) {
     display: flex;
     width: 33.3%;
@@ -33,10 +35,12 @@
 
 .footer__links {
   display: flex;
+  margin-top: -20px;
 
   @media (min-width: $tablet-width) {
     width: 33.3%;
     justify-content: center;
+    margin-top: 0;
   }
 }
 
