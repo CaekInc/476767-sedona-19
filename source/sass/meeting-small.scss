@@ -1,5 +1,5 @@
 .meeting-small {
-  height: 158px;
+  height: 156px;
   width: 320px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   display: flex;
@@ -43,6 +43,7 @@
 .meeting-small__logo {
   width: 229px;
   height: 39px;
+  padding-top: 37px;
 
   @media (min-width: $tablet-width) {
     width: 460px;

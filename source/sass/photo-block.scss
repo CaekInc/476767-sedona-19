@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   // justify-content: center;
   min-height: 414px;
-  border-top: 1px solid $grey-color;
+  border-top: 1px solid $biege-color;
 
   @media (min-width: $tablet-width) {
     border: none;
@@ -75,6 +75,11 @@
   color: $black-color;
   font-weight: bold;
 
+  @include reset-margin;
+
+  margin-top: -5px;
+  padding-bottom: 5px;
+
   @media (min-width: $tablet-width) {
     @include reset-margin;
     padding-top: 2px;
@@ -89,6 +94,8 @@
   font-size: 14px;
   text-transform: none;
   color: $grey-color;
+
+  @include reset-margin;
 
   @media (min-width: $tablet-width) {
     @include reset-margin;
