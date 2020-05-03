@@ -25,6 +25,8 @@
 }
 
 .contact-block__heading {
+  margin-top: 19px;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 32px;
 
@@ -92,7 +94,7 @@
 
 .contact-block__telephone_input {
   width: 200px;
-  margin-top: 14px;
+  margin-top: 10px;
 
   @media (min-width: $tablet-width) {
     width: 590px;
@@ -107,7 +109,7 @@
 }
 
 .contact-block__email {
-  margin-top: 20px;
+  margin-top: 18px;
   margin-bottom: 28px;
   display: flex;
   flex-wrap: wrap;
@@ -140,7 +142,7 @@
 
 .contact-block__email_input {
   width: 200px;
-  margin-top: 14px;
+  margin-top: 12px;
 
 
   @media (min-width: $tablet-width) {
@@ -156,7 +158,11 @@
 }
 
 .contact-block__email_label {
+  padding-left: 22px;
+
   @media (min-width: $tablet-width) {
+    @include reset-margin;
+
     padding-right: 10px;
     margin-right: auto;
     margin-left: 82px;
@@ -170,7 +176,12 @@
 
 
 .contact-block__telephone_label {
+  margin-top: -3px;
+  padding-left: 22px;
+
   @media (min-width: $tablet-width) {
+    @include reset-margin;
+
     margin-right: auto;
     margin-left: 82px;
   }

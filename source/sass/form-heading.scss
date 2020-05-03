@@ -4,8 +4,8 @@
   margin-top: 41px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 70px;
-    margin-bottom: 84px;
+    margin-top: 66px;
+    margin-bottom: 74px;
   }
 }
 
@@ -16,10 +16,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
-  }
-
-  @media (min-width: $desktop-width) {
-
+    margin-bottom: 22px;
   }
 }
 
@@ -34,10 +31,5 @@
     line-height: 24px;
     width: 440px;
     margin: auto;
-}
-
-}
-
-@media (min-width: $desktop-width) {
-
+  }
 }

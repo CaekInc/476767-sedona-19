@@ -4,7 +4,11 @@
 }
 
 .review-block__heading {
+  margin-top: 18px;
+
   @media (min-width: $tablet-width) {
+    @include reset-margin;
+
     margin-bottom: 32px;
 
     &::before {
@@ -52,8 +56,8 @@
   line-height: 26px;
 
   @include reset-margin;
-  margin-top: 20px;
-  padding: 22px 22px;
+  margin-top: 16px;
+  padding: 18px 20px;
 
   & input {
     font: $font;
@@ -72,5 +76,3 @@
     width: 960px;
   }
 }
-
-

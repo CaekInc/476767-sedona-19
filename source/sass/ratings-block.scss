@@ -24,10 +24,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-content: space-between;
+  align-content: center;
   height: 170px;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  margin-top: 25px;
+  margin-bottom: 48px;
 
   @media (min-width: $tablet-width) {
     @include reset-margin;
@@ -44,25 +44,32 @@
 .ratings-block__container {
   display: flex;
   align-items: center;
+  margin-top: 18px;
 
   & input {
     appearance: none;
-    width: 46px;
-    height: 46px;
+    width: 52px;
+    height: 52px;
     background-color: $biege-color;
     position: relative;
     border-radius: 50px;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 28px;
+  }
 }
 
 .ratings-block__label {
+  margin-right: 25px;
   font-size: 18px;
   font-weight: bold;
   text-transform: none;
-  margin-left: 27px;
 }
 
 .ratings-block__radio {
+  margin-right: 14px;
+
   &:checked {
     background-color: $black-color;
     border: 16px solid $biege-color;
@@ -70,13 +77,15 @@
 }
 
 .ratings-block__heading {
+  margin-top: 18px;
+
   @media (min-width: $tablet-width) {
     text-align: left;
     font-size: 21px;
 
     @include reset-margin;
 
-    margin-bottom: 60px;
+    margin-bottom: 0;
     margin-left: 60px;
   }
 
