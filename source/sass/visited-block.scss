@@ -1,7 +1,15 @@
 .visited-block {
+  @media (min-width: $tablet-width) {
+    margin-top: 23px;
+    margin-bottom: 52px;
+  }
+
   @media (min-width: $desktop-width) {
     flex-direction: column;
     margin: 0 auto;
+    margin-top: 54px;
+    margin-bottom: 69px;
+    width: 100%;
   }
 }
 
@@ -15,15 +23,16 @@
 
 
   @media (min-width: $tablet-width) {
-    // width: 500px;
+    min-height: 179px;
     margin: 0 20%;
+    margin-top: 26px;
     justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 auto;
+    margin: 0 57px;
+    margin-top: 42px;
     min-height: auto;
-    min-width: $desktop-width;
     justify-content: space-evenly;
   }
 }
@@ -34,8 +43,8 @@
   @media (min-width: $tablet-width) {
     @include reset-margin;
 
+    margin: 0 auto;
     width: 278px;
-    margin-bottom: 22px;
 
     &::before {
       content: "";
@@ -77,8 +86,8 @@
 
   & input {
     appearance: none;
-    width: 53px;
-    height: 53px;
+    width: 55px;
+    height: 55px;
     background-color: $biege-color;
     border: 5px solid $biege-color;
     box-sizing: border-box;
@@ -95,12 +104,21 @@
     &:nth-child(2) {
       margin-right: 15px;
     }
+
+    &:first-child {
+      margin-top: 0;
+    }
   }
 
   @media (min-width: $desktop-width) {
     @include reset-margin;
+
+    &:nth-child(2) {
+      margin-right: 0;
+    }
   }
 }
+
 
 .visited-block__label {
   margin-left: 27px;

@@ -7,6 +7,11 @@
     margin-top: 66px;
     margin-bottom: 74px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 105px;
+    margin-bottom: 59px;
+  }
 }
 
 .form-heading__top {
