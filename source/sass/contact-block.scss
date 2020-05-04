@@ -96,7 +96,7 @@
   }
 }
 
-.contact-block__input_telephone {
+.input-telephone {
   width: 200px;
   margin-top: 10px;
 
@@ -144,7 +144,7 @@
   }
 }
 
-.contact-block__input_email {
+.input-email {
   width: 200px;
   margin-top: 12px;
 
@@ -161,7 +161,7 @@
   }
 }
 
-.contact-block__label_email {
+.label-email {
   padding-left: 22px;
 
   @media (min-width: $tablet-width) {
@@ -179,7 +179,7 @@
 }
 
 
-.contact-block__label_telephone {
+.label-telephone {
   margin-top: -3px;
   padding-left: 22px;
 
