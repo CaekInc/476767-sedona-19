@@ -43,6 +43,20 @@
   &::placeholder {
     color: $black-color;
   }
+
+  &:hover {
+    background-color: $blue-button__disabled;
+  }
+
+  &:active {
+    background-color: $white-color;
+  }
+
+  &:focus {
+    background-color: $white-color;
+    outline: solid 4px $blue-button__disabled;
+    outline-offset: -4px;
+  }
 }
 
 

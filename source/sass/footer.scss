@@ -94,16 +94,17 @@
   width: 27px;
   height: 34px;
   margin-left: 11px;
-}
 
-.footer__develop-img path {
-  fill: #000000;
-
-  &:focus {
-    fill: #81b3d2;
+  &:focus,
+  &:active {
+    fill: #bdbbbc;
   }
 
   &:hover {
-    fill: #bdbbbc;
+    fill: #81b3d2;
   }
 }
+
+// .footer__develop-img path {
+//   fill: #000000;
+// }

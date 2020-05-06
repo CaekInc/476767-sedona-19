@@ -128,10 +128,23 @@
 }
 
 .visited-block__checkbox {
+  outline: none;
+
   &:checked {
     background-image: url("../img/icon-tick.svg");
     background-repeat: no-repeat;
     background-size: 24px 16px;
     background-position: center;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $blue-button__disabled;
+    border-color: $blue-button__disabled;
+  }
+
+  &:active {
+    background-color: #d5d5d5;
+    border-color: #d5d5d5;
   }
 }

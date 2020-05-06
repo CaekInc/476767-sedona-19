@@ -28,7 +28,8 @@ $retina-dppx: 1.5dppx;
     color: rgba(255, 255, 255, 0.3);
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $blue-button__hover;
   }
 

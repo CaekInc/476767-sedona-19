@@ -48,8 +48,8 @@
 
   & input {
     appearance: none;
-    width: 52px;
-    height: 52px;
+    width: 51px;
+    height: 51px;
     background-color: $biege-color;
     position: relative;
     border-radius: 50px;
@@ -70,9 +70,22 @@
 .ratings-block__radio {
   margin-right: 14px;
 
+  &:hover,
+  &:focus {
+    background-color: $blue-button__disabled;
+  }
+
+  &:active {
+    background-color: $grey-color;
+    border: 16px solid #d5d5d5;
+    outline: none;
+  }
+
+
   &:checked {
     background-color: $black-color;
     border: 16px solid $biege-color;
+    outline: none;
   }
 }
 

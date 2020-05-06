@@ -16,6 +16,20 @@
   }
 }
 
+.header-nav__toggle {
+  display: none;
+
+  &:active {
+    fill: #a7cae0;
+    outline: none;
+  }
+
+  &:hover,
+  &:focus {
+    fill: #cde1ed;
+  }
+}
+
 .header-nav__list {
   list-style: none;
   color: $white-color;

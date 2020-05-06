@@ -31,7 +31,7 @@
 .page-header__logo_image {
   width: 115px;
   height: 83px;
-  object-fit: contain;
+  object-fit: none;
   z-index: 2;
 
   @media (min-width: $desktop-width) {
@@ -52,6 +52,16 @@
   cursor: pointer;
   margin-right: 20px;
   margin-bottom: 30px;
+
+  &:hover,
+  &:focus {
+    fill: #b3d1e4;
+  }
+
+  &:active {
+    fill: #d9e8f1;
+    outline: none;
+  }
 
   @media (min-width: $tablet-width) {
     display: none;
