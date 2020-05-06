@@ -12,7 +12,7 @@
           <a class="page-header__logo" href="index.html">
             <picture>
               <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
-                <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
               <img class="page-header__logo_image" src="img/logo-sedona-mobile.svg" alt="Sedona logo" width="102" height="83">
             </picture>
           </a>
@@ -50,11 +50,11 @@
               <div class="user-block__wrapper">
                 <div class="user-block__name">
                   <label for="userName" class="form-block__label">имя*:</label>
-                  <input type="text" name="username" id="" class="form-block__input-text user-block__input_name" placeholder="Петр">
+                  <input type="text" name="username" id="" class="form-block__input-text user-block__input_name" placeholder="Петр" required>
                 </div>
                 <div class="user-block__surname">
                   <label for="userSurname" class="form-block__label ">фамилия*:</label>
-                  <input type="text" name="userSurname" id="" class="form-block__input-text user-block__input_surname" placeholder="Иванов">
+                  <input type="text" name="userSurname" id="" class="form-block__input-text user-block__input_surname" placeholder="Иванов" required>
                 </div>
                 <div class="user-block__patron">
                   <label for="userPatron" class="form-block__label ">отчество:</label>
@@ -67,11 +67,11 @@
               <div class="contact-block__wrapper">
                 <div class="contact-block__telephone">
                   <label for="userTelephone" class="form-block__label label-telephone"><span>контактный</span> телефон*:</label>
-                  <input type="tel" name="userTelephone" class="contact-block__input_telephone form-block__input-text" placeholder="Введите телефон">
+                  <input type="tel" name="userTelephone" class="contact-block__input_telephone form-block__input-text" placeholder="Введите телефон" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
                 </div>
                 <div class="contact-block__email">
                   <label for="userEmail" class="form-block__label label-email">электронная почта*:</label>
-                  <input type="email" name="userEmail" class="contact-block__input_email form-block__input-text" placeholder="Введите e-mail">
+                  <input type="email" name="userEmail" class="contact-block__input_email form-block__input-text" placeholder="Введите e-mail" required>
                 </div>
               </div>
             </div>

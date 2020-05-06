@@ -28,6 +28,10 @@
   &:focus {
     fill: #cde1ed;
   }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+    }
 }
 
 .header-nav__list {
@@ -81,20 +85,21 @@
     }
 
     &:nth-child(2) {
-      margin-right: 70px;
+      margin-right: 80px;
     }
 
     &:nth-child(3) {
-      margin-left: 70px;
+      margin-left: 77px;
     }
 
     & a[href] {
-      &:hover {
+      &:hover,
+      &:focus {
         background-color: $white-color;
         color: $blue-color;
       }
 
-      &:focus {
+      &:active {
         background-color: $white-color;
         color: $menu-grey;
       }
@@ -103,7 +108,7 @@
 
   @media (min-width: $desktop-width) {
     &:nth-child(2) {
-      margin-right: 110px;
+      margin-right: 132px;
     }
 
     &:nth-child(3) {

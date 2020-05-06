@@ -95,12 +95,12 @@
   height: 34px;
   margin-left: 11px;
 
-  &:focus,
   &:active {
     fill: #bdbbbc;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     fill: #81b3d2;
   }
 }
