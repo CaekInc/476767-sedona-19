@@ -17,7 +17,19 @@
 }
 
 .header-nav__toggle {
-  display: none;
+  @include reset-margin;
+  display: flex;
+  z-index: 2;
+  // margin-bottom: -56px;
+  // margin-left: auto;
+  // margin-right: 6%;
+  cursor: pointer;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  border: none;
+  background-color: transparent;
+  fill: $white-color;
 
   &:active {
     fill: #a7cae0;
@@ -31,7 +43,7 @@
 
   @media (min-width: $tablet-width) {
     display: none;
-    }
+  }
 }
 
 .header-nav__list {
@@ -126,16 +138,17 @@
 }
 
 .header-nav__list-item_active {
-  &::after {
-    content: "";
-    position: absolute;
-    background-image: url("../img/icon-cross.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 23px;
-    height: 22px;
-    right: 20px;
-  }
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   background-image: url("../img/icon-cross.svg");
+  //   background-size: contain;
+  //   background-repeat: no-repeat;
+  //   width: 23px;
+  //   height: 22px;
+  //   right: 20px;
+  // }
+  position: relative;
 
   @media (min-width: $tablet-width) {
     &::after {
