@@ -5,6 +5,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
   order: -1;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     min-height: 56px;
@@ -25,11 +26,11 @@
   // margin-right: 6%;
   cursor: pointer;
   position: absolute;
-  top: 16px;
-  right: 16px;
   border: none;
   background-color: transparent;
   fill: $white-color;
+  top: 13px;
+  right: 20px;
 
   &:active {
     fill: #a7cae0;
@@ -148,7 +149,7 @@
   //   height: 22px;
   //   right: 20px;
   // }
-  position: relative;
+
 
   @media (min-width: $tablet-width) {
     &::after {
@@ -159,5 +160,38 @@
       color: $menu-hover;
       background-color: $white-color;
     }
+  }
+}
+
+.header-nav_hidden {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 56px;
+    width: $tablet-width;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    order: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
+}
+
+.header-nav_nojs {
+  display: flex;
+  min-height: 168px;
+  min-width: 320px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  order: -1;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
