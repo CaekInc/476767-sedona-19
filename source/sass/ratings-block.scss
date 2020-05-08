@@ -1,7 +1,8 @@
 .ratings-block {
   @media (min-width: $tablet-width) {
     order: -1;
-    width: 384px;
+    width: 50%;
+    flex-direction: column;
 
     &::after {
       content: "";
@@ -15,8 +16,6 @@
 
   @media (min-width: $desktop-width) {
     @include reset-margin;
-
-    width: 50%;
   }
 }
 
@@ -24,51 +23,62 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-content: center;
-  height: 170px;
-  margin-top: 25px;
-  margin-bottom: 48px;
+  align-content: space-between;
+  min-height: 192px;
+  margin: 0 6%;
+  margin-top: 23px;
+  margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     @include reset-margin;
 
-    margin-right: 10px;
-    height: 205px;
+    margin-left: 16%;
+    min-height: 210px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 71px;
+    margin-left: 21%;
   }
 }
 
 .ratings-block__container {
   display: flex;
   align-items: center;
-  margin-top: 18px;
+  justify-content: flex-start;
+  width: 100%;
 
   & input {
     appearance: none;
-    width: 51px;
-    height: 51px;
+    width: 54px;
+    height: 54px;
     background-color: $biege-color;
     position: relative;
     border-radius: 50px;
   }
 
   @media (min-width: $tablet-width) {
-    margin-top: 28px;
+    // margin-top: 28px;
   }
 }
 
 .ratings-block__label {
-  margin-right: 25px;
+  // margin-right: 25px;
   font-size: 18px;
   font-weight: bold;
   text-transform: none;
+  margin-left: 9%;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 6%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 4%;
+  }
 }
 
 .ratings-block__radio {
-  margin-right: 14px;
+  // margin-right: 14px;
 
   &:hover,
   &:focus {
@@ -84,7 +94,7 @@
 
   &:checked {
     background-color: $black-color;
-    border: 16px solid $biege-color;
+    border: 17px solid $biege-color;
     outline: none;
   }
 }
@@ -98,12 +108,11 @@
 
     @include reset-margin;
 
-    margin-bottom: 0;
-    margin-left: 60px;
+    margin-bottom: 60px;
+    margin-left: 15.5%;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 200px;
-    margin-bottom: 20px;
+    margin-left: 33%;
   }
 }

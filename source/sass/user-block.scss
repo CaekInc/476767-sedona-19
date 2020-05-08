@@ -1,12 +1,9 @@
 .user-block {
   @media (min-width: $tablet-width) {
-    width: 343px;
-    margin-left: 40px;
+    width: 50%;
   }
 
   @media (min-width: $desktop-width) {
-    width: 50%;
-
     @include reset-margin;
   }
 }
@@ -17,11 +14,14 @@
   @media (min-width: $tablet-width) {
     @include reset-margin;
 
-    margin-left: 17px;
+    width: 100%;
+    margin-left: 15%;
+    margin-right: 16%;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 79px;
+    margin-left: 13%;
+    margin-right: 20%;
   }
 }
 
@@ -33,12 +33,13 @@
 
     @include reset-margin;
 
+
     margin-bottom: 58px;
-    margin-left: 20px;
+    margin-left: 15%;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 78px;
+    margin-left: 13%;
   }
 }
 
@@ -57,7 +58,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    // width: 328px;
+    margin-left: 4.3%;
   }
 }
 

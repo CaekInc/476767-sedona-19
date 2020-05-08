@@ -1,7 +1,7 @@
 .visited-block {
   @media (min-width: $tablet-width) {
     margin-top: 23px;
-    margin-bottom: 52px;
+    margin-bottom: 69px;
   }
 
   @media (min-width: $desktop-width) {
@@ -17,15 +17,16 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  min-height: 270px;
-  align-content: space-around;
-  margin-bottom: 27px;
+  min-height: 313px;
+  align-content: space-between;
+  margin: 0 6%;
+  margin-bottom: 24px;
 
 
   @media (min-width: $tablet-width) {
-    min-height: 179px;
+    min-height: 144px;
     margin: 0 20%;
-    margin-top: 26px;
+    margin-top: 43px;
     justify-content: space-between;
   }
 
@@ -81,16 +82,16 @@
 .visited-block__container {
   display: flex;
   align-items: center;
-  margin-left: 20px;
-  margin-top: 27px;
+  // margin-left: 20px;
+  // margin-top: 27px;
 
   & input {
     appearance: none;
-    width: 55px;
-    height: 55px;
+    width: 46px;
+    height: 46px;
     background-color: $biege-color;
     border: 5px solid $biege-color;
-    box-sizing: border-box;
+    box-sizing: content-box;
     border-radius: 10px;
   }
 
@@ -121,10 +122,11 @@
 
 
 .visited-block__label {
-  margin-left: 27px;
+  // margin-left: 27px;
   font-weight: bold;
   font-size: 18px;
   text-transform: none;
+  padding-left: 24px;
 }
 
 .visited-block__checkbox {
