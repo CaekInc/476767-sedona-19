@@ -1,0 +1,132 @@
+.whitecard {
+
+  text-align: left;
+
+  @media (min-width: $tablet-width) {
+    height: 330px;
+    width: 256px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+  }
+}
+
+.whitecard__heading {
+  font-size: 18px;
+  font-weight: bold;
+  color: $black-color;
+
+  @include reset-margin;
+  padding-left: 70px;
+  padding-top: 13px;
+
+  @media (min-width: $tablet-width) {
+    @include reset-margin;
+
+    font-size: 21px;
+    margin-top: 40%;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 20.5%;
+  }
+}
+
+.whitecard__text {
+  line-height: 21px;
+  font-size: 14px;
+  color: $grey-color;
+  width: 199px;
+  padding-left: 70px;
+
+  @media (min-width: $tablet-width) {
+    @include reset-margin;
+
+    width: 162px;
+  }
+
+  @media (min-width: $desktop-width) {
+    // margin-bottom: -20.5%;
+    width: 300px;
+  }
+}
+
+.whitecard_house {
+  background-image: url("../img/icon-house.svg");
+  background-repeat: no-repeat;
+  background-size: 37px 36px;
+  background-position-x: 22px;
+  background-position-y: 25px;
+  padding-top: 26px;
+
+  @media (min-width: $tablet-width) {
+    @include reset-margin;
+
+    background-size: 72px 72px;
+    background-position-x: 50%;
+    background-position-y: 24%;
+  }
+
+  @media (min-width: $desktop-width) {
+    // margin-bottom: -20.5%;
+    background-position-y: 25%;
+  }
+}
+
+.whitecard_souvenir {
+  background-image: url("../img/icon-gift.svg");
+  background-repeat: no-repeat;
+  background-size: 32px 38px;
+  background-position-x: 25px;
+  background-position-y: 2px;
+
+  @media (min-width: $tablet-width) {
+    @include reset-margin;
+
+    background-size: 64px 75px;
+    background-position-x: 50%;
+    background-position-y: 23%;
+    order: 1;
+  }
+}
+
+.whitecard__heading_souvenir {
+  padding-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
+}
+
+
+.whitecard_food {
+  background-image: url("../img/icon-burger.svg");
+  background-repeat: no-repeat;
+  background-size: 40px 35px;
+  background-position-x: 18px;
+  background-position-y: 10px;
+
+  @media (min-width: $tablet-width) {
+    @include reset-margin;
+
+    background-size: 77px 68px;
+    background-position-x: 50%;
+    background-position-y: 25%;
+  }
+}
+
+.whitecard__heading_food {
+  padding-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
+}

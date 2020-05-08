@@ -1,0 +1,88 @@
+.biegecard {
+  height: 167px;
+  width: 280px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid $biege-color;
+
+  @media (min-width: $tablet-width) {
+    width: 256px;
+    height: 256px;
+    border: none;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+  }
+}
+
+.biegecard__heading {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.44;
+  width: 259px;
+
+  @include reset-margin;
+
+  padding-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    @include reset-margin;
+
+    font-size: 21px;
+    width: 120px;
+    padding-top: 5px;
+    line-height: 26px;
+  }
+}
+
+.biegecard__number {
+  width: 100%;
+
+  @include reset-margin;
+
+  @media (min-width: $tablet-width) {
+    @include reset-margin;
+
+    padding-top: 10px;
+    padding-bottom: 22px;
+  }
+}
+
+.biegecard__text {
+  line-height: 1.5;
+  font-size: 14px;
+  width: 238px;
+  color: $grey-color;
+
+  @include reset-margin;
+  padding-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    @include reset-margin;
+
+    width: 158px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 283px;
+    padding-bottom: 20px;
+  }
+}
+
+.biegecard_lastcard {
+  border-bottom: none;
+}
+
+
+.biegecard__text_lastcard {
+  width: 246px;
+
+  @media (min-width: $tablet-width) {
+    width: 158px;
+  }
+}

@@ -1,3 +1,21 @@
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+// сделать нормальную анимацию
 .header-nav {
   display: flex;
   min-height: 168px;
@@ -6,6 +24,8 @@
   justify-content: space-around;
   order: -1;
   position: relative;
+  animation: bounce 0.6s;
+
 
   @media (min-width: $tablet-width) {
     min-height: 56px;
