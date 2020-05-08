@@ -17,13 +17,13 @@
   }
 }
 
-.photo-block__wrapper {
+.photo-block__wrapper_bottom {
   @media (min-width: $tablet-width) {
     padding-left: 20px;
   }
 }
 
-.photo-block__img-wrapper {
+.photo-block__wrapper {
   margin: 22px auto;
 
   @media (min-width: $tablet-width) {
@@ -70,7 +70,7 @@
   }
 }
 
-.photo-block__bottom-heading {
+.photo-block__heading {
   font-size: 14px;
   color: $black-color;
   font-weight: bold;
@@ -90,7 +90,7 @@
   }
 }
 
-.photo-block__bottom-text {
+.photo-block__text {
   font-size: 14px;
   text-transform: none;
   color: $grey-color;
@@ -107,7 +107,7 @@
   }
 }
 
-.photo-block__bottom-metric {
+.photo-block__metric {
   display: flex;
   align-items: center;
   width: 61px;
@@ -118,7 +118,7 @@
   }
 }
 
-.photo-block__bottom-metric_text {
+.photo-block__text_metric {
   font-size: 14px;
   line-height: 24px;
   width: 31px;
@@ -126,7 +126,7 @@
 }
 
 
-.button-like {
+.photo-block__button {
   width: 21px;
   height: 21px;
   opacity: 0.3;
