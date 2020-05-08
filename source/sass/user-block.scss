@@ -12,7 +12,7 @@
 }
 
 .user-block__wrapper {
-  margin: 0 20px;
+  margin: 0 6%;
 
   @media (min-width: $tablet-width) {
     @include reset-margin;
@@ -47,16 +47,17 @@
   align-items: center;
 }
 
-.user-block__input_name {
-  width: 207px;
-  margin-left: 14px;
+.user-block__input {
+  width: 100%;
+  margin-left: 5.5%;
+
 
   @media (min-width: $tablet-width) {
-    width: 193px;
+    // width: 193px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 328px;
+    // width: 328px;
   }
 }
 
@@ -66,18 +67,6 @@
   margin: 20px 0;
 }
 
-.user-block__input_surname {
-  margin-left: 13px;
-  width: 172px;
-
-  @media (min-width: $tablet-width) {
-    width: 158px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 292px;
-  }
-}
 
 .user-block__patron {
   display: flex;
@@ -85,15 +74,42 @@
   margin-bottom: 25px;
 }
 
-.user-block__input_patron {
-  margin-left: 16px;
-  width: 173px;
+// .user-block__input_patron {
+//   margin-left: 16px;
+//   width: 173px;
 
-  @media (min-width: $tablet-width) {
-    width: 160px;
-  }
+//   @media (min-width: $tablet-width) {
+//     width: 160px;
+//   }
 
-  @media (min-width: $desktop-width) {
-    width: 294px;
-  }
-}
+//   @media (min-width: $desktop-width) {
+//     width: 294px;
+//   }
+// }
+
+
+// .user-block__input_surname {
+//   margin-left: 13px;
+//   width: 172px;
+
+//   @media (min-width: $tablet-width) {
+//     width: 158px;
+//   }
+
+//   @media (min-width: $desktop-width) {
+//     width: 292px;
+//   }
+// }
+
+// .user-block__input_name {
+//   width: 207px;
+//   margin-left: 14px;
+
+//   @media (min-width: $tablet-width) {
+//     width: 193px;
+//   }
+
+//   @media (min-width: $desktop-width) {
+//     width: 328px;
+//   }
+// }
