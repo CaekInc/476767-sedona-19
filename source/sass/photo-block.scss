@@ -138,6 +138,14 @@
   background-color: transparent;
 
   @include reset-margin;
+
+  @media (min-width: $desktop-width) {
+    opacity: 1;
+    mask-image: url("../img/icon-like.svg");
+    background-color: white;
+    background-image: none;
+    mask-repeat: no-repeat;
+  }
 }
 
 .photo-block_first {
