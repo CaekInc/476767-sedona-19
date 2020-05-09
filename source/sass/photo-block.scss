@@ -135,7 +135,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   cursor: pointer;
-  background-color: none;
+  background-color: transparent;
 
   @include reset-margin;
 }

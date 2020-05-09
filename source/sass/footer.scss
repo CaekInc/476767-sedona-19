@@ -66,6 +66,12 @@
   align-items: center;
 
   @include blue-button_hover;
+
+  &:active .social-facebook,
+  &:active .social-twitter,
+  &:active .social-youtube {
+    opacity: 0.3;
+  }
 }
 
 .footer__develop {
