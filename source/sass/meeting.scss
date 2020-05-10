@@ -1,11 +1,12 @@
 .meeting {
-  height: 387px;
+  min-height: 387px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   object-fit: contain;
   background-repeat: no-repeat;
   display: flex;
   flex-wrap: wrap;
   margin-top: -30px;
+  width: 100%;
 
   &::after {
     content: "";

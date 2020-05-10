@@ -1,5 +1,5 @@
 .biegecard {
-  height: 167px;
+  min-height: 167px;
   width: 280px;
   text-align: center;
   display: flex;
@@ -10,7 +10,7 @@
 
   @media (min-width: $tablet-width) {
     width: 256px;
-    height: 256px;
+    min-height: 256px;
     border: none;
     flex-direction: column;
   }

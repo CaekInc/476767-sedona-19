@@ -1,6 +1,6 @@
 .bluecard {
   width: 320px;
-  height: 191px;
+  min-height: 191px;
   background-color: $blue-color;
   display: flex;
   flex-wrap: wrap;
@@ -11,7 +11,7 @@
 
   @media (min-width: $tablet-width) {
     width: 256px;
-    height: 256px;
+    min-height: 256px;
     flex-direction: column;
   }
 
@@ -76,7 +76,7 @@
 }
 
 .bluecard_first {
-  height: 222px;
+  min-height: 222px;
   margin-top: -2px;
 
   &::before {
@@ -90,7 +90,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    height: 256px;
+    min-height: 256px;
     margin-top: 0;
 
     &::before {

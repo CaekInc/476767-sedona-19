@@ -48,9 +48,10 @@
 .photo-block__bottom {
   text-align: left;
   margin-left: 20px;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
-    height: 80px;
+    min-height: 80px;
     background-color: $biege-color;
     width: 100%;
     display: flex;

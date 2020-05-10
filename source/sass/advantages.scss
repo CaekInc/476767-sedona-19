@@ -26,7 +26,7 @@
 }
 
 .advantages__wrapper_whitecard {
-  height: 416px;
+  min-height: 416px;
 
   @media (min-width: $tablet-width) {
     display: flex;
