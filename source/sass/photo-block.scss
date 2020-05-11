@@ -17,7 +17,7 @@
   }
 }
 
-.photo-block__wrapper_bottom {
+.photo-block__container {
   @media (min-width: $tablet-width) {
     padding-left: 20px;
   }
@@ -91,7 +91,7 @@
   }
 }
 
-.photo-block__text {
+.photo-block__author {
   font-size: 14px;
   text-transform: none;
   color: $grey-color;
@@ -119,7 +119,7 @@
   }
 }
 
-.photo-block__text_metric {
+.photo-block__likes {
   font-size: 14px;
   line-height: 24px;
   width: 31px;

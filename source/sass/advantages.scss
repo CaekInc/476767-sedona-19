@@ -25,7 +25,7 @@
   }
 }
 
-.advantages__wrapper_whitecard {
+.advantages__whitecard {
   min-height: 416px;
 
   @media (min-width: $tablet-width) {
@@ -35,7 +35,7 @@
   }
 }
 
-.advantages__wrapper_biegecard {
+.advantages__biegecard {
   min-height: 503px;
   min-width: 320px;
   background-color: $biege-color;
