@@ -1,6 +1,6 @@
-let buttonTogle = document.querySelector('.page-header__toggle');
+let buttonTogle = document.getElementById('buttonShow');
 let navHidden = document.getElementById('navigation');
-let navToggle = document.querySelector('.header-nav__toggle');
+let navToggle = document.getElementById('buttonHide');
 
 
 navHidden.classList.remove('header-nav_nojs');
