@@ -1,0 +1,77 @@
+.popup {
+  display: none;
+  text-align: center;
+  min-width: 320px;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+}
+
+.popup_succes {
+  padding-top: 49px;
+  min-height: 323px;
+}
+
+.popup_fail {
+  padding-top: 46px;
+  min-height: 280px;
+}
+
+.popup__heading {
+  @include reset-margin;
+
+  font-size: 18px;
+  font-weight: bold;
+  color: $black-color;
+  margin-bottom: 30px;
+}
+
+.popup__text {
+  @include reset-margin;
+
+  font-size: 14px;
+  color: $grey-color;
+  line-height: 24px;
+  width: 211px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.popup__bottom {
+  min-height: 98px;
+  background-color: $biege-color;
+}
+
+.popup__button {
+  @include reset-margin;
+
+  height: 58px;
+  background-color: $blue-color;
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: bold;
+  color: $white-color;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+
+  @include blue-button_hover;
+
+  @media (min-width: $tablet-width) {
+    @include reset-margin;
+    width: 324px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 480px;
+    margin-left: 10%;
+  }
+}
+
+.popup__button_succes {
+  margin: 20px auto;
+  width: 180px;
+}
+
+.popup__button_fail {
+
+  width: 280px;
+}
