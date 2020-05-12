@@ -5,9 +5,14 @@
 
 .video__slogan {
   margin: 0 auto;
+  margin-top: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 35px;
+  }
 }
 
-.video__slogan-heading {
+.video__heading {
   font-size: 18px;
   font-weight: bold;
 
@@ -16,13 +21,15 @@
   }
 }
 
-.video__slogan-text {
+.video__text {
   font-size: 14px;
   color: $grey-color;
   width: 236px;
+  padding-top: 12px;
+  line-height: 24px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 0;
     width: 415px;
   }
 }
-

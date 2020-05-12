@@ -1,16 +1,16 @@
 .form-block {
   display: flex;
   flex-wrap: wrap;
-  border-top: 1px solid $grey-color;
+  border-top: 1px solid $biege-color;
   min-width: 320px;
 
   @media (min-width: $tablet-width) {
-
+    border: none;
   }
 
-  @media (min-width: $desktop-width) {
-
-  }
+  // @media (min-width: $desktop-width) {
+  //   min-width: $desktop-width;
+  // }
 }
 
 .form-block__heading {
@@ -22,6 +22,10 @@
   @include reset-margin;
   margin: 24px auto 0;
   line-height: 26px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .form-block__input-text {
@@ -39,6 +43,20 @@
   &::placeholder {
     color: $black-color;
   }
+
+  &:hover {
+    background-color: $blue-button__disabled;
+  }
+
+  &:active {
+    background-color: $white-color;
+  }
+
+  &:focus {
+    background-color: $white-color;
+    outline: solid 4px $blue-button__disabled;
+    outline-offset: -4px;
+  }
 }
 
 
@@ -46,6 +64,41 @@
   text-align: left;
   font-size: 14px;
   color: $grey-color;
+}
+
+.form-block__text {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    text-align: right;
+    color: $grey-color;
+    font-size: 14px;
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 10%;
+  }
+}
+
+.form-block_bottom {
+  border-top: none;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 7.8%;
+    align-items: baseline;
+    margin-top: 58px;
+    margin-bottom: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-top: 58px;
+    margin-bottom: 66px;
+    width: 100%;
+  }
 }
 
 .form-block__button {
@@ -58,12 +111,19 @@
   color: $white-color;
   text-transform: uppercase;
   margin-top: 50px;
-}
+  margin-bottom: 38px;
+  cursor: pointer;
+  border: none;
 
-@media (min-width: $tablet-width) {
+  @include blue-button_hover;
 
-}
+  @media (min-width: $tablet-width) {
+    @include reset-margin;
+    width: 324px;
+  }
 
-@media (min-width: $desktop-width) {
-
+  @media (min-width: $desktop-width) {
+    width: 480px;
+    margin-left: 10%;
+  }
 }

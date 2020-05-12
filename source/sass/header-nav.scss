@@ -1,18 +1,93 @@
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+// сделать нормальную анимацию
 .header-nav {
-  display: flex;
-  min-height: 168px;
-  min-width: 320px;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  order: -1;
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
 
   @media (min-width: $tablet-width) {
     min-height: 56px;
-    width: $tablet-width;
+    min-width: $tablet-width;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    order: -1;
   }
 
   @media (min-width: $desktop-width) {
-    width: $desktop-width;
+    min-width: $desktop-width;
+  }
+}
+
+.header-nav_hidden {
+  @media (max-width: $tablet-width) {
+    display: flex;
+    min-height: 168px;
+    min-width: 320px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    order: -1;
+    position: relative;
+    animation: bounce 0.6s;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 56px;
+    min-width: $tablet-width;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    order: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: $desktop-width;
+  }
+}
+
+.header-nav__toggle {
+  @include reset-margin;
+  display: flex;
+  z-index: 2;
+  // margin-bottom: -56px;
+  // margin-left: auto;
+  // margin-right: 6%;
+  cursor: pointer;
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  fill: $white-color;
+  top: 13px;
+  right: 20px;
+
+  &:active {
+    fill: #a7cae0;
+    outline: none;
+  }
+
+  &:hover,
+  &:focus {
+    fill: #cde1ed;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
 
@@ -35,20 +110,20 @@
 }
 
 .header-nav__list-item {
-  width: 320px;
+  min-width: 320px;
   background-color: $blue-color;
-  box-shadow: 0px 1px 0 0 rgba(1, 1, 1, 0.2), inset 0px 1px 0 0 rgba(255, 255, 255, 0.2);
+  box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
 
   &:nth-last-child(1) {
-    box-shadow: inset 0px 1px 0 0 rgba(255, 255, 255, 0.2);
+    box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
   }
 
   &:nth-child(1) {
-    box-shadow: 0px 1px 0 0 rgba(1, 1, 1, 0.2);
+    box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2);
   }
 
   & a[href] {
@@ -67,23 +142,35 @@
     }
 
     &:nth-child(2) {
-      margin-right: 40px;
+      margin-right: 80px;
     }
 
     &:nth-child(3) {
-      margin-left: 40px;
+      margin-left: 77px;
     }
 
     & a[href] {
-      &:hover {
-        background-color: $white-color;
-        color: $blue-color;
-      }
-
+      &:hover,
       &:focus {
         background-color: $white-color;
-        color: $menu-grey;
+        color: $blue-color;
+        outline: none;
       }
+
+      &:active {
+        background-color: $white-color;
+        color: rgba(51, 51, 51, 0.3);
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &:nth-child(2) {
+      margin-right: 132px;
+    }
+
+    &:nth-child(3) {
+      margin-left: 110px;
     }
   }
 }
@@ -97,16 +184,17 @@
 }
 
 .header-nav__list-item_active {
-  &::after {
-    content: "";
-    position: absolute;
-    background-image: url(../img/icon-cross.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 23px;
-    height: 22px;
-    right: 60px;
-  }
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   background-image: url("../img/icon-cross.svg");
+  //   background-size: contain;
+  //   background-repeat: no-repeat;
+  //   width: 23px;
+  //   height: 22px;
+  //   right: 20px;
+  // }
+
 
   @media (min-width: $tablet-width) {
     &::after {
@@ -117,5 +205,19 @@
       color: $menu-hover;
       background-color: $white-color;
     }
+  }
+}
+
+.header-nav_nojs {
+  display: flex;
+  min-height: 168px;
+  min-width: 320px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  order: -1;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }

@@ -6,9 +6,15 @@
 @import "visually-hidden.scss";
 @import "meeting.scss";
 @import "advantages.scss";
+@import "bluecard.scss";
+@import "picturecard.scss";
+@import "whitecard.scss";
+@import "biegecard";
 @import "site-heading.scss";
 @import "main-form.scss";
 @import "footer.scss";
+@import "hashtag.scss";
+@import "develop.scss";
 @import "social.scss";
 @import "meeting-small.scss";
 @import "photo.scss";
@@ -22,6 +28,7 @@
 @import "ratings-block.scss";
 @import "review-block.scss";
 @import "visited-block.scss";
+@import "popup.scss";
 
 html {
   box-sizing: border-box;
