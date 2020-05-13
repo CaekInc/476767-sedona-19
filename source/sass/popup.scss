@@ -1,31 +1,31 @@
 .popup {
-  display: none;
+  // display: none;
   text-align: center;
   min-width: 320px;
+  background-color: $white-color;
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
-
-  @media (min-width: $tablet-width) {
-
-  }
 }
 
 .popup_succes {
-  padding-top: 49px;
-  min-height: 323px;
+  // min-height: 323px;
+  position: absolute;
+  bottom: -1225px;
 
   @media (min-width: $tablet-width) {
     min-width: 640px;
-    min-height: 347px;
+    min-height: auto;
     margin: 0 auto;
   }
 }
 
 .popup_fail {
-  padding-top: 46px;
   min-height: 280px;
+  position: absolute;
+  bottom: -864px;
 
   @media (min-width: $tablet-width) {
-
+    margin: 0 auto;
+    width: 400px;
   }
 }
 
@@ -38,7 +38,26 @@
   margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
+    font-size: 30px;
+    margin-top: 64px;
+  }
+}
 
+.popup__heading_fail {
+  margin-top: 46px;
+
+  @media (min-width: $tablet-width) {
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.popup__heading__succes {
+  margin-top: 49px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 64px;
   }
 }
 
@@ -51,9 +70,19 @@
   width: 211px;
   margin: 0 auto;
   margin-bottom: 20px;
+}
+
+.popup__text_succes {
+  width: 214px;
 
   @media (min-width: $tablet-width) {
+    width: 414px;
+  }
+}
 
+.popup__text_fail {
+  @media (min-width: $tablet-width) {
+    width: 277px;
   }
 }
 
@@ -63,6 +92,7 @@
 
   @media (min-width: $tablet-width) {
     min-height: 146px;
+    margin-top: 40px;
   }
 }
 
@@ -82,30 +112,52 @@
   @include blue-button_hover;
 
   @media (min-width: $tablet-width) {
-    @include reset-margin;
-    width: 324px;
+    font-size: 21px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 480px;
-    margin-left: 10%;
+
   }
 }
 
 .popup__button_succes {
   margin: 20px auto;
-  width: 180px;
+  width: 280px;
 
   @media (min-width: $tablet-width) {
-
+    margin: 40px auto;
+    width: 458px;
   }
 }
 
 .popup__button_fail {
-
-  width: 280px;
+  width: 180px;
 
   @media (min-width: $tablet-width) {
+    width: 272px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+  }
+}
 
+.popup_show-succes {
+  display: block;
+  position: absolute;
+  bottom: -1225px;
+
+  @media (min-width: $tablet-width) {
+    bottom: 582px;
+    left: 145px;
+  }
+}
+
+.popup_show-fail {
+  display: block;
+  position: absolute;
+  bottom: -864px;
+
+  @media (min-width: $tablet-width) {
+    bottom: -962px;
+    left: 270px;
   }
 }
