@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <script>document.createElement("picture")</script>
+    <script src="js/picturefill.js" async></script>
+    <script src="js/svg4everybody.js"></script>
+    <script>svg4everybody()</script>
   </head>
   <body>
     <div style="display: none;">
@@ -65,6 +69,9 @@
 
               <div class="picturecard">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.webp 1x, img/main-city-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/main-city-tablet@1x.webp 1x, img/main-city-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/main-city-mobile@1x.webp 1x, img/main-city-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, /img/main-city-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
                   <img class="picturecard__image picturecard__image_city" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" alt="изображение города">
@@ -94,8 +101,11 @@
 
                 <div class="picturecard">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.webp 1x, img/main-bridge-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.webp 1x, img/main-bridge-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/main-bridge-mobile@1x.webp 1x, img/main-bridge-mobile@2x.webp 2x">
                     <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
-                      <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
                     <img class="picturecard__image picturecard__image_bridge" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" alt="изображение моста дьявола">
                   </picture>
                 </div>
@@ -128,7 +138,8 @@
             </div>
             <button type="button" class="main-form__button">найти гостиницу</button>
             <div class="main-form__map">
-
+              <!-- <iframe class="map__block" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.135657646024!2d-111.8301579502104!3d34.85444381543453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1582821450235!5m2!1sru!2sru" width="320" height="350" style="border:0;" allowfullscreen="">
+              </iframe> -->
             </div>
           </section>
 
