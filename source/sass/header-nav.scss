@@ -17,10 +17,6 @@
 }
 // сделать нормальную анимацию
 .header-nav {
-  @media (max-width: $tablet-width) {
-    display: none;
-  }
-
   @media (min-width: $tablet-width) {
     min-height: 56px;
     min-width: $tablet-width;
@@ -58,6 +54,12 @@
 
   @media (min-width: $desktop-width) {
     min-width: $desktop-width;
+  }
+}
+
+.header-nav_visible {
+  @media (max-width: $tablet-width) {
+    display: none;
   }
 }
 
