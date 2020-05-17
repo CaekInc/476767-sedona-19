@@ -15,6 +15,8 @@ var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
+var picturefill = require("picturefill");
+var svg4everybody = require("svg4everybody");
 
 
 gulp.task("css", function () {
