@@ -123,8 +123,13 @@
   width: 40px;
   height: 21px;
 
+  @media (min-width: $tablet-width) {
+    margin-top: 2px;
+  }
+
   @media (min-width: $desktop-width) {
     fill: $white-color;
+    margin-top: 0;
 }
 }
 
