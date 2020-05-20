@@ -161,6 +161,8 @@
   height: 20px;
   background-color: transparent;
   border: none;
+  outline: none;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 39px;

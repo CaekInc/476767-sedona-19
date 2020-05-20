@@ -1,7 +1,6 @@
 .photo-block {
   display: flex;
   flex-wrap: wrap;
-  // justify-content: center;
   min-height: 414px;
   border-top: 1px solid $biege-color;
 
@@ -154,6 +153,7 @@
   border: none;
   cursor: pointer;
   background-color: transparent;
+  outline: none;
 
   @include reset-margin;
   margin-bottom: 5px;
