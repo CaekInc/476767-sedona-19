@@ -119,11 +119,26 @@
   }
 }
 
+.photo-block__like {
+  width: 40px;
+  height: 21px;
+
+  @media (min-width: $desktop-width) {
+    fill: $white-color;
+}
+}
+
 .photo-block__likes {
   font-size: 14px;
   line-height: 24px;
   width: 31px;
   font-weight: bold;
+  margin-left: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    margin-bottom: 8px;
+  }
 }
 
 
@@ -132,22 +147,16 @@
   height: 21px;
   opacity: 0.3;
   border: none;
-  background-image: url("../img/icon-like.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
   cursor: pointer;
   background-color: transparent;
 
   @include reset-margin;
+  margin-bottom: 5px;
 
   @media (min-width: $desktop-width) {
     opacity: 1;
-    mask-image: url("../img/icon-like.svg");
-    background-color: white;
-    background-image: none;
-    mask-repeat: no-repeat;
-    margin-top: -2px;
     margin-left: -2px;
+    margin-bottom: 4px;
   }
 }
 
