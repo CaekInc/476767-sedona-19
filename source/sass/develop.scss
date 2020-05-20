@@ -23,3 +23,9 @@
 // .footer__develop-img path {
 //   fill: #000000;
 // }
+
+.develop__text {
+  @media (min-width: $desktop-width) {
+    padding-left: 33px;
+  }
+}
