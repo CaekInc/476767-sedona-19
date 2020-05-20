@@ -15,8 +15,7 @@ var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
-var picturefill = require("picturefill");
-var svg4everybody = require("svg4everybody");
+var inject = require('gulp-inject');
 
 
 gulp.task("css", function () {
@@ -48,6 +47,25 @@ gulp.task("webp", function (){
   return gulp.src("source/img/*.{png,jpg}")
   .pipe(webp({quality: 90}))
   .pipe(gulp.dest("source/img/"));
+});
+
+gulp.task("picturefill", function () {
+  return gulp.src("./node_modules/picturefill/dist/picturefill.min.js")
+  .pipe(gulp.dest("build/js/"));
+});
+
+gulp.task("svg4everybody", function () {
+  return gulp.src("./node_modules/svg4everybody/dist/svg4everybody.min.js")
+  .pipe(gulp.dest("build/js/"));
+});
+
+gulp.task('index', function () {
+  var target = gulp.src('./source/index.html');
+  // It's not necessary to read the files (will speed up things), we're only after their paths:
+  var sources = gulp.src(['./source/**/*.js', './source/**/*.css'], {read: false});
+
+  return target.pipe(inject(sources))
+    .pipe(gulp.dest('./src'));
 });
 
 gulp.task("sprite", function () {
@@ -107,6 +125,8 @@ gulp.task("build", gulp.series(
   "copy",
   "css",
   "sprite",
+  "picturefill",
+  "svg4everybody",
   "html"
 ));
 gulp.task("start", gulp.series("build", "server"));
