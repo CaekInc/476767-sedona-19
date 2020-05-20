@@ -4,9 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона фотогалерея</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
+    <div style="display: none;">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <div class="wrapper">
       <header class="page-header">
         <a class="page-header__logo" href="index.html">
@@ -17,19 +20,14 @@
           </picture>
         </a>
         <button id="buttonShow" class="page-header__toggle" type="button"><span class="visually-hidden">открыть меню</span>
-          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
-            <g>
-              <rect width="22.928" height="3.964"/>
-              <rect y="9.009" width="22.928" height="3.964"/>
-              <rect y="18.018" width="22.928" height="3.964"/>
-            </g>
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-menu"></use>
           </svg>
-
         </button>
-        <nav class="header-nav header-nav_nojs" id="navigation">
+        <nav class="header-nav header-nav_nojs header-nav_visible" id="navigation">
           <button id="buttonHide" class="header-nav__toggle" type="button" aria-label="Закрыть меню">
-            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.199px" height="22.199px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve" fill="#ffffff">
-              <polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "/>
+            <svg>
+              <use xlink:href="img/sprite.svg#icon-cross"></use>
             </svg>
           </button>
           <ul class="header-nav__list">
@@ -54,6 +52,9 @@
             <div class="photo-block photo-block_first">
               <div class="photo-block__wrapper">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-sunset-mobile@1x.webp 1x, img/photo-sunset-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
                   <img src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="фотография дороги" class="photo-block__img photo-block__img-first">
@@ -66,7 +67,11 @@
                   <p class="photo-block__author">Автор фото: Борис</p>
                 </div>
                 <div class="photo-block__metric">
-                  <button type="button" class="photo-block__button"></button>
+                  <button type="button" class="photo-block__button">
+                    <svg class="photo-block__like">
+                      <use xlink:href="img/sprite.svg#icon-like"></use>
+                    </svg>
+                  </button>
                   <p class="photo-block__likes">1350</p>
                 </div>
               </div>
@@ -75,6 +80,9 @@
             <div class="photo-block">
               <div class="photo-block__wrapper">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.webp 1x, img/photo-cactus-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.webp 1x, img/photo-cactus-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-cactus-mobile@1x.webp 1x, img/photo-cactus-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
                     <img src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" alt="фотография кактуса" class="photo-block__img">
@@ -87,7 +95,11 @@
                   <p class="photo-block__author">Автор фото: Сергей</p>
                 </div>
                 <div class="photo-block__metric">
-                  <button type="button" class="photo-block__button"></button>
+                  <button type="button" class="photo-block__button">
+                    <svg class="photo-block__like">
+                      <use xlink:href="img/sprite.svg#icon-like"></use>
+                    </svg>
+                  </button>
                   <p class="photo-block__likes">143</p>
                 </div>
               </div>
@@ -96,9 +108,12 @@
             <div class="photo-block">
               <div class="photo-block__wrapper">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.webp 1x, img/photo-roads-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.webp 1x, img/photo-roads-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-roads-mobile@1x.webp 1x, img/photo-roads-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
-                    <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
-                    <img src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" alt="фотография дороги" class="photo-block__img">
+                  <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+                  <img src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" alt="фотография дороги" class="photo-block__img">
                 </picture>
 
               </div>
@@ -108,7 +123,11 @@
                   <p class="photo-block__author">Автор фото: Петр</p>
                 </div>
                 <div class="photo-block__metric">
-                  <button type="button" class="photo-block__button"></button>
+                  <button type="button" class="photo-block__button">
+                    <svg class="photo-block__like">
+                      <use xlink:href="img/sprite.svg#icon-like"></use>
+                    </svg>
+                  </button>
                   <p class="photo-block__likes">96</p>
                 </div>
               </div>
@@ -117,8 +136,11 @@
             <div class="photo-block photo-block_last">
               <div class="photo-block__wrapper">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-bridge-mobile@1x.webp 1x, img/photo-bridge-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
-                    <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
                   <img src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="фотография каньона" class="photo-block__img">
                 </picture>
 
@@ -129,7 +151,11 @@
                   <p class="photo-block__author">Автор фото: Антон</p>
                 </div>
                 <div class="photo-block__metric">
-                  <button type="button" class="photo-block__button"></button>
+                  <button type="button" class="photo-block__button">
+                    <svg class="photo-block__like">
+                      <use xlink:href="img/sprite.svg#icon-like"></use>
+                    </svg>
+                  </button>
                   <p class="photo-block__likes">254</p>
                 </div>
               </div>
@@ -144,7 +170,38 @@
               <p class="site-heading__bottom video__text">смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
             </section>
             <div class="video__wrapper">
-
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+                <img class="video__picture" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Обзор Седоны">
+              </picture>
+              <div class="video__tools">
+                <div class="video__top">
+                  <div class="video__scale">
+                    <button type="button" class="video__circle"></button>
+                  </div>
+                </div>
+                <div class="video__buttons">
+                  <button type="button" class="video__button video__button_replay">
+                    <svg width="16" height="20" class="video__icon">
+                      <use xlink:href="img/sprite.svg#icon-video-replay"></use>
+                    </svg>
+                  </button>
+                  <button type="button" class="video__button video__button_subtitles">
+                    <svg class="video__icon" width="32" height="20">
+                      <use xlink:href="img/sprite.svg#icon-video-subtitles"></use>
+                    </svg>
+                  </button>
+                  <button type="button" class="video__button video__button_screen">
+                    <svg class="video__icon" width="20" height="20">
+                      <use xlink:href="img/sprite.svg#icon-video-fullscreen"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
             </div>
 
 
@@ -162,26 +219,22 @@
             <ul class="social__links-list">
               <li class="social__links-item">
                 <a class="social__button" href="https://twitter.com/htmlacademy_ru" aria-label="twitter">
-                  <svg class="social__twitter" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
-                    <g id="W6EeEF_1_">
-                      <g>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.484,3.074,0.264,3.685,1.15 c0.694-0.225,1.372-0.47,2.072-0.69c-0.004,0.841-0.538,1.478-0.883,1.728C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.977-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.319,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.655,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.788,11.283,0.153z"/>
-                      </g>
-                    </g>
+                  <svg class="social__twitter" width="17.5" height="14.663">
+                    <use xlink:href="img/sprite.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__links-item">
                 <a class="social__button" href="https://www.facebook.com/htmlacademy" aria-label="facebook">
-                  <svg class="social__facebook" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.672px" height="18.944px" viewBox="0 0 8.672 18.944" enable-background="new 0 0 8.672 18.944" xml:space="preserve">
-                    <path d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114 H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787 C5.765,5.069,5.75,3.709,6.275,3.356z"/>
+                  <svg class="social__facebook" width="8.672px" height="18.944px">
+                    <use xlink:href="img/sprite.svg#icon-facebook"></use>
                   </svg>
                   </a>
               </li>
               <li class="social__links-item">
                 <a class="social__button" href="https://www.youtube.com/user/htmlacademyru" aria-label="youtube">
-                  <svg class="social__youtube" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.979px" height="14.015px" viewBox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015" xml:space="preserve">
-                    <path d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z"/>
+                  <svg class="social__youtube" width="19.979px" height="14.015px">
+                    <use xlink:href="img/sprite.svg#icon-youtube"></use>
                   </svg>
                 </a>
               </li>
@@ -191,14 +244,16 @@
           <div class="footer__develop develop">
             <p class="develop__text">разработано</p>
             <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="html academy">
-              <svg class="develop__img" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26.943px" height="34.09px">
-                <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"/>
-              </svg>
+              <svg class="develop__img" xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09"><path d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"/></svg>
             </a>
           </div>
         </footer>
 
     </div>
-    <script src="js/script.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/picturefill.min.js" async></script>
+    <script src="js/svg4everybody.min.js"></script>
+    <script>svg4everybody();
+      document.createElement( "picture" );</script>
   </body>
 </html>

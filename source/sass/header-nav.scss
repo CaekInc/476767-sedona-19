@@ -17,10 +17,6 @@
 }
 // сделать нормальную анимацию
 .header-nav {
-  @media (max-width: $tablet-width) {
-    display: none;
-  }
-
   @media (min-width: $tablet-width) {
     min-height: 56px;
     min-width: $tablet-width;
@@ -61,6 +57,12 @@
   }
 }
 
+.header-nav_visible {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
 .header-nav__toggle {
   @include reset-margin;
   display: flex;
@@ -74,7 +76,7 @@
   background-color: transparent;
   fill: $white-color;
   top: 13px;
-  right: 20px;
+  left: 277px;
 
   &:active {
     fill: #a7cae0;
@@ -104,7 +106,7 @@
     display: flex;
     color: $black-color;
     font-size: 14px;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
   }
 }
