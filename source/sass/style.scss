@@ -30,6 +30,23 @@
 @import "visited-block.scss";
 @import "popup.scss";
 
+@font-face {
+  font-family: "PTSans-Regular";
+  src: url("../fonts/ptsans.woff2") format("woff2"),
+    url("../fonts/ptsans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PTSans-Bold";
+  src: url("../fonts/ptsansbold.woff2") format("woff2"),
+    url("../fonts/ptsansbold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 html {
   box-sizing: border-box;
 

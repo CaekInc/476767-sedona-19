@@ -32,10 +32,21 @@ navToggle.addEventListener('click', function () {
 //  popup js
 
 
+
+
+
+
 formVisitors.addEventListener('submit', function (evt) {
-  evt.preventDefault();
-  popupSucces.classList.add('popup_show-succes');
-  closeSucces.focus();
+   if (formVisitors.checkValidity() === true) {
+    evt.preventDefault();
+    popupSucces.classList.add('popup_show-succes');
+    closeSucces.focus();
+   }
+    else if (formVisitors.checkValidity() === false) {
+    evt.preventDefault();
+    popupFail.classList.add('popup_show-fail');
+    closeFail.focus();
+  }
 });
 
 closeSucces.addEventListener('click', function () {
