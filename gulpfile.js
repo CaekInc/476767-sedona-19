@@ -16,7 +16,9 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
 var inject = require('gulp-inject');
-
+var htmlmin = require("gulp-htmlmin");
+var uglify = require('gulp-uglify');
+var pipeline = require('readable-stream').pipeline;
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -59,13 +61,20 @@ gulp.task("svg4everybody", function () {
   .pipe(gulp.dest("build/js/"));
 });
 
+gulp.task("uglify", function () {
+  return gulp.src("source/js/*.js")
+    .pipe(uglify())
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest("build/js/"));
+});
+
 gulp.task('index', function () {
   var target = gulp.src('./source/index.html');
   // It's not necessary to read the files (will speed up things), we're only after their paths:
   var sources = gulp.src(['./source/**/*.js', './source/**/*.css'], {read: false});
 
   return target.pipe(inject(sources))
-    .pipe(gulp.dest('./src'));
+    .pipe(gulp.dest('./source'));
 });
 
 gulp.task("sprite", function () {
@@ -82,14 +91,16 @@ gulp.task("html", function () {
     .pipe(posthtml([
       include()
     ]))
+    .pipe(htmlmin({
+      collapseWhitespace: true
+    }))
     .pipe(gulp.dest("build"));
 });
 
 gulp.task("copy", function () {
   return gulp.src([
-    "source/fonts/*.{woff, woff2}",
+    "source/fonts/*",
     "source/img/**",
-    "source/js/**",
     "source/*.ico"
   ], {
     base : "source"
@@ -122,11 +133,12 @@ gulp.task("refresh", function (done) {
 
 gulp.task("build", gulp.series(
   "clean",
+  "picturefill",
+  "svg4everybody",
+  "uglify",
   "copy",
   "css",
   "sprite",
-  "picturefill",
-  "svg4everybody",
   "html"
 ));
 gulp.task("start", gulp.series("build", "server"));

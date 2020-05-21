@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона форма</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="./fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/ptsans.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/ptsansbold.woff" as="font" type="font/woff" crossorigin="anonymous">
   </head>
   <body>
     <div style="display: none;">
@@ -34,7 +38,7 @@
               <li class="header-nav__list-item"><a class="header-nav__button" href="index.html">Главная</a></li>
               <li class="header-nav__list-item"><a class="header-nav__button" href="photo.html">Фото и видео</a></li>
               <li class="header-nav__list-item header-nav__list-item_active"><a class="header-nav__button">Форма отзыва</a></li>
-              <li class="header-nav__list-item"><a class="header-nav__button" href="#">Html academy</a></li>
+              <li class="header-nav__list-item"><a class="header-nav__button" href="https://htmlacademy.ru">Html academy</a></li>
             </ul>
           </nav>
         </header>
@@ -54,15 +58,15 @@
               <div class="user-block__wrapper">
                 <div class="user-block__name">
                   <label for="userName" class="form-block__label">имя*:</label>
-                  <input type="text" name="userName" id="" class="form-block__input-text user-block__input" placeholder="Петр" required>
+                  <input type="text" name="userName" id="user-name" class="form-block__input-text user-block__input" placeholder="Петр" required>
                 </div>
                 <div class="user-block__surname">
                   <label for="userSurname" class="form-block__label ">фамилия*:</label>
-                  <input type="text" name="userSurname" id="" class="form-block__input-text user-block__input" placeholder="Иванов" required>
+                  <input type="text" name="userSurname" id="user-surname" class="form-block__input-text user-block__input" placeholder="Иванов" required>
                 </div>
                 <div class="user-block__patron">
                   <label for="userPatron" class="form-block__label ">отчество:</label>
-                  <input type="text" name="userPatron" id="" class="form-block__input-text user-block__input" placeholder="Александрович">
+                  <input type="text" name="user-patron" id="" class="form-block__input-text user-block__input" placeholder="Александрович">
                 </div>
               </div>
             </div>
@@ -71,11 +75,11 @@
               <div class="contact-block__wrapper">
                 <div class="contact-block__telephone">
                   <label for="userTelephone" class="form-block__label contact-block__label-telephone"><span>контактный</span> телефон*:</label>
-                  <input type="tel" name="userTelephone" class="contact-block__input contact-block__input_telephone form-block__input-text" placeholder="Введите телефон" required>
+                  <input  id="user-telephone" type="tel" name="userTelephone" class="contact-block__input contact-block__input_telephone form-block__input-text" placeholder="Введите телефон" required>
                 </div>
                 <div class="contact-block__email">
                   <label for="userEmail" class="form-block__label contact-block__label-email">электронная почта*:</label>
-                  <input type="email" name="userEmail" class="contact-block__input contact-block__input_email form-block__input-text" placeholder="Введите e-mail" required>
+                  <input id="user-email" type="email" name="userEmail" class="contact-block__input contact-block__input_email form-block__input-text" placeholder="Введите e-mail" required>
                 </div>
               </div>
             </div>
@@ -179,7 +183,8 @@
         </footer>
 
     </div>
-    <script src="js/menu.js"></script>
+    <script src="js/menu.min.js"></script>
+    <script src="js/form.min.js"></script>
     <script src="js/picturefill.min.js" async></script>
     <script src="js/svg4everybody.min.js"></script>
     <script>svg4everybody();
