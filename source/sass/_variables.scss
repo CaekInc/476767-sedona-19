@@ -37,3 +37,26 @@ $retina-dppx: 1.5dppx;
     background-color: $blue-button__disabled;
   }
 }
+
+@mixin tools-hover {
+  &:hover,
+  &:focus {
+    fill: $grey-color;
+  }
+
+  &:active {
+    fill: rgba(51, 51, 51, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    &:hover,
+    &:focus {
+      fill: rgba(255, 255, 255, 0.6);
+    }
+
+    &:active {
+      fill: rgba(255, 255, 255, 0.3);
+    }
+  }
+}
+

@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона форма</title>
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="preload" href="./fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/ptsans.woff" as="font" type="font/woff" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/ptsansbold.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   </head>
   <body>
     <div style="display: none;">
@@ -24,13 +22,13 @@
             </picture>
           </a>
           <button id="buttonShow" class="page-header__toggle" type="button"><span class="visually-hidden">открыть меню</span>
-            <svg>
+            <svg width="23" height="22">
               <use xlink:href="img/sprite.svg#icon-menu"></use>
             </svg>
           </button>
           <nav class="header-nav header-nav_nojs header-nav_visible" id="navigation">
             <button id="buttonHide" class="header-nav__toggle" type="button" aria-label="Закрыть меню">
-              <svg>
+              <svg width="22" height="22">
                 <use xlink:href="img/sprite.svg#icon-cross"></use>
               </svg>
             </button>
@@ -46,7 +44,7 @@
           <h1 class="visually-hidden">форма отзыва</h1>
           <section class="meeting-small">
             <h2 class="visually-hidden">добро пожаловать в Седону</h2>
-            <img class="meeting-small__logo" src="img/text-sedona.svg" alt="добро пожаловать в Седону">
+            <img class="meeting-small__logo" src="img/text-sedona.svg" alt="добро пожаловать в Седону" width="229" height="39">
           </section>
           <section class="form-heading site-heading">
             <h2 class="site-heading__top form-heading__top">оставьте свой отзыв</h2>
@@ -57,16 +55,16 @@
               <p class="form-block__heading user-block__heading">представьтесь:</p>
               <div class="user-block__wrapper">
                 <div class="user-block__name">
-                  <label for="userName" class="form-block__label">имя*:</label>
-                  <input type="text" name="userName" id="user-name" class="form-block__input-text user-block__input" placeholder="Петр" required>
+                  <label for="user-name" class="form-block__label">имя*:</label>
+                  <input type="text" name="user-name" id="user-name" class="form-block__input-text user-block__input" placeholder="Петр" required>
                 </div>
                 <div class="user-block__surname">
-                  <label for="userSurname" class="form-block__label ">фамилия*:</label>
-                  <input type="text" name="userSurname" id="user-surname" class="form-block__input-text user-block__input" placeholder="Иванов" required>
+                  <label for="user-surname" class="form-block__label ">фамилия*:</label>
+                  <input type="text" name="user-surname" id="user-surname" class="form-block__input-text user-block__input" placeholder="Иванов" required>
                 </div>
                 <div class="user-block__patron">
-                  <label for="userPatron" class="form-block__label ">отчество:</label>
-                  <input type="text" name="user-patron" id="" class="form-block__input-text user-block__input" placeholder="Александрович">
+                  <label for="user-patron" class="form-block__label ">отчество:</label>
+                  <input type="text" name="user-patron" id="user-patron" class="form-block__input-text user-block__input" placeholder="Александрович">
                 </div>
               </div>
             </div>
@@ -74,12 +72,12 @@
               <p class="form-block__heading contact-block__heading">Контактная информация:</p>
               <div class="contact-block__wrapper">
                 <div class="contact-block__telephone">
-                  <label for="userTelephone" class="form-block__label contact-block__label-telephone"><span>контактный</span> телефон*:</label>
-                  <input  id="user-telephone" type="tel" name="userTelephone" class="contact-block__input contact-block__input_telephone form-block__input-text" placeholder="Введите телефон" required>
+                  <label for="user-telephone" class="form-block__label contact-block__label-telephone"><span>контактный</span> телефон*:</label>
+                  <input  id="user-telephone" type="tel" name="user-telephone" class="contact-block__input contact-block__input_telephone form-block__input-text" placeholder="Введите телефон" required>
                 </div>
                 <div class="contact-block__email">
-                  <label for="userEmail" class="form-block__label contact-block__label-email">электронная почта*:</label>
-                  <input id="user-email" type="email" name="userEmail" class="contact-block__input contact-block__input_email form-block__input-text" placeholder="Введите e-mail" required>
+                  <label for="user-email" class="form-block__label contact-block__label-email">электронная почта*:</label>
+                  <input id="user-email" type="email" name="user-email" class="contact-block__input contact-block__input_email form-block__input-text" placeholder="Введите e-mail" required>
                 </div>
               </div>
             </div>
@@ -104,19 +102,19 @@
               <p class="form-block__heading visited-block__heading">посещенные достопримечательности:</p>
               <div class="visited-block__wrapper">
                 <div class="visited-block__container">
-                  <input class="visited-block__checkbox" type="checkbox" name="visitedBridge" id="visitedBox" checked>
+                  <input class="visited-block__checkbox" type="checkbox" name="visitedBridge" checked>
                   <label class="visited-block__label" for="visitedBridge">Мост Дьявола</label>
                 </div>
                 <div class="visited-block__container">
-                  <input class="visited-block__checkbox" type="checkbox" name="visitedMountain" id="visitedBox" checked>
+                  <input class="visited-block__checkbox" type="checkbox" name="visitedMountain" checked>
                   <label class="visited-block__label" for="visitedMountain">Гора-Колокол</label>
                 </div>
                 <div class="visited-block__container">
-                  <input class="visited-block__checkbox" type="checkbox" name="visitedPark" id="visitedBox" checked>
+                  <input class="visited-block__checkbox" type="checkbox" name="visitedPark" checked>
                   <label class="visited-block__label" for="visitedPark">Слайд-парк</label>
                 </div>
                 <div class="visited-block__container">
-                  <input class="visited-block__checkbox" type="checkbox" name="visitedRocks" id="visitedBox">
+                  <input class="visited-block__checkbox" type="checkbox" name="visitedRocks">
                   <label class="visited-block__label" for="visitedRocks">Красные скалы</label>
                 </div>
               </div>
@@ -130,7 +128,7 @@
               <p class="form-block__text">* — обязательные поля</p>
             </div>
             <div class="popup popup_succes" id="popupSucces">
-              <h2 class="popup__heading popup__heading__succes">ваш отзыв отправлен!</h2>
+              <h2 class="popup__heading popup__heading_succes">ваш отзыв отправлен!</h2>
               <p class="popup__text popup__text_succes">спасибо за ваше участие, ваш отзыв уже поступил к нам. в ближайшее время мы опубликуем его на сайте.</p>
               <div class="popup__bottom">
                 <button id="succes-close" type="button" class="popup__button popup__button_succes">закрыть окно</button>
@@ -152,21 +150,21 @@
             <ul class="social__links-list">
               <li class="social__links-item">
                 <a class="social__button" href="https://twitter.com/htmlacademy_ru" aria-label="twitter">
-                  <svg class="social__twitter" width="17.5" height="14.663">
+                  <svg class="social__twitter" width="18" height="14">
                     <use xlink:href="img/sprite.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__links-item">
                 <a class="social__button" href="https://www.facebook.com/htmlacademy" aria-label="facebook">
-                  <svg class="social__facebook" width="8.672px" height="18.944px">
+                  <svg class="social__facebook" width="9" height="18">
                     <use xlink:href="img/sprite.svg#icon-facebook"></use>
                   </svg>
                   </a>
               </li>
               <li class="social__links-item">
                 <a class="social__button" href="https://www.youtube.com/user/htmlacademyru" aria-label="youtube">
-                  <svg class="social__youtube" width="19.979px" height="14.015px">
+                  <svg class="social__youtube" width="20" height="14">
                     <use xlink:href="img/sprite.svg#icon-youtube"></use>
                   </svg>
                 </a>
@@ -177,7 +175,7 @@
           <div class="footer__develop develop">
             <p class="develop__text">разработано</p>
             <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="html academy">
-              <svg class="develop__img" xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09"><path d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"/></svg>
+              <svg class="develop__img" xmlns="http://www.w3.org/2000/svg" width="27" height="34"><path d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"/></svg>
             </a>
           </div>
         </footer>

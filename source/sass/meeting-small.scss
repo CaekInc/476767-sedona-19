@@ -8,6 +8,7 @@
   align-items: center;
   margin-top: -30px;
   background-position: bottom;
+  background-color: $blue-color;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");

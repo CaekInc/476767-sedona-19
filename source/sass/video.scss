@@ -199,6 +199,8 @@
 .video__icon {
   fill: #5c6870;
 
+  @include tools-hover;
+
   @media (min-width: $tablet-width) {
     fill: $white-color;
   }

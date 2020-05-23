@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="preload" href="./fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/ptsans.woff" as="font" type="font/woff" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/ptsansbold.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   </head>
   <body>
     <div style="display: none;">
@@ -24,13 +22,13 @@
           </picture>
         </a>
         <button id="buttonShow" class="page-header__toggle" type="button"><span class="visually-hidden">открыть меню</span>
-          <svg>
+          <svg width="23" height="22">
             <use xlink:href="img/sprite.svg#icon-menu"></use>
           </svg>
         </button>
         <nav class="header-nav header-nav_nojs header-nav_visible" id="navigation">
           <button id="buttonHide" class="header-nav__toggle" type="button" aria-label="Закрыть меню">
-            <svg>
+            <svg width="22" height="22">
               <use xlink:href="img/sprite.svg#icon-cross"></use>
             </svg>
           </button>
@@ -46,7 +44,7 @@
           <h1 class="visually-hidden">Welcome Sedona</h1>
           <section class="meeting">
             <h2 class="visually-hidden">добро пожаловать в Седону</h2>
-            <img class="meeting__logo" src="img/text-sedona-index.svg" alt="добро пожаловать в Седону">
+            <img class="meeting__logo" src="img/text-sedona-index.svg" width="281" height="214" alt="добро пожаловать в Седону">
           </section>
 
           <section class="advantages">
@@ -132,7 +130,7 @@
               <h2 class="site-heading__top main-form__heading">Заинтересовались?</h2>
               <p class="site-heading__bottom main-form__heading_text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
             </div>
-            <button type="button" class="main-form__button">найти гостиницу</button>
+            <a href="form.html" class="main-form__button">найти гостиницу</a>
             <div class="main-form__map">
               <iframe class="main-form__iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d838753.4777657876!2d-111.826086!3d34.796361!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1582550050631!5m2!1sru!2sru" width="320" height="350" allowfullscreen="">
               </iframe>
@@ -149,21 +147,21 @@
                 <ul class="social__links-list">
                   <li class="social__links-item">
                     <a class="social__button" href="https://twitter.com/htmlacademy_ru" aria-label="twitter">
-                      <svg class="social__twitter" width="17.5" height="14.663">
+                      <svg class="social__twitter" width="18" height="14">
                         <use xlink:href="img/sprite.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social__links-item">
                     <a class="social__button" href="https://www.facebook.com/htmlacademy" aria-label="facebook">
-                      <svg class="social__facebook" width="8.672px" height="18.944px">
+                      <svg class="social__facebook" width="9" height="18">
                         <use xlink:href="img/sprite.svg#icon-facebook"></use>
                       </svg>
                       </a>
                   </li>
                   <li class="social__links-item">
                     <a class="social__button" href="https://www.youtube.com/user/htmlacademyru" aria-label="youtube">
-                      <svg class="social__youtube" width="19.979px" height="14.015px">
+                      <svg class="social__youtube" width="20" height="14">
                         <use xlink:href="img/sprite.svg#icon-youtube"></use>
                       </svg>
                     </a>
@@ -174,7 +172,7 @@
               <div class="footer__develop develop">
                 <p class="develop__text">разработано</p>
                 <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="html academy">
-                  <svg class="develop__img" xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09"><path d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"/></svg>
+                  <svg class="develop__img" xmlns="http://www.w3.org/2000/svg" width="27" height="34"><path d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"/></svg>
                 </a>
               </div>
             </footer>
