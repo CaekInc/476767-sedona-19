@@ -33,6 +33,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 34px;
+
     &::before {
       width: 260px;
     }
@@ -75,5 +77,6 @@
 
   @media (min-width: $desktop-width) {
     width: 960px;
+    padding-top: 16px;
   }
 }

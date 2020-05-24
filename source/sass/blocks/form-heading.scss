@@ -2,6 +2,7 @@
   text-align: center;
   margin: 0 auto;
   margin-top: 41px;
+  margin-bottom: 18px;
 
   @media (min-width: $tablet-width) {
     margin-top: 66px;
@@ -9,8 +10,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 105px;
-    margin-bottom: 59px;
+    margin-top: 102px;
+    margin-bottom: 60px;
   }
 }
 
