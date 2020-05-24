@@ -1,0 +1,116 @@
+.user-block {
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include reset-margin;
+  }
+}
+
+.user-block__wrapper {
+  margin: 0 6%;
+
+  @media (min-width: $tablet-width) {
+    @include reset-margin;
+
+    width: 100%;
+    margin-left: 15%;
+    margin-right: 16%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 13%;
+    margin-right: 20%;
+  }
+}
+
+.user-block__heading {
+  margin-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+
+    @include reset-margin;
+
+
+    margin-bottom: 58px;
+    margin-left: 15%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 13%;
+  }
+}
+
+.user-block__name {
+  display: flex;
+  align-items: center;
+}
+
+.user-block__input {
+  width: 100%;
+  margin-left: 5.5%;
+
+
+  @media (min-width: $tablet-width) {
+    // width: 193px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 4.3%;
+  }
+}
+
+.user-block__surname {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+
+.user-block__patron {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+// .user-block__input_patron {
+//   margin-left: 16px;
+//   width: 173px;
+
+//   @media (min-width: $tablet-width) {
+//     width: 160px;
+//   }
+
+//   @media (min-width: $desktop-width) {
+//     width: 294px;
+//   }
+// }
+
+
+// .user-block__input_surname {
+//   margin-left: 13px;
+//   width: 172px;
+
+//   @media (min-width: $tablet-width) {
+//     width: 158px;
+//   }
+
+//   @media (min-width: $desktop-width) {
+//     width: 292px;
+//   }
+// }
+
+// .user-block__input_name {
+//   width: 207px;
+//   margin-left: 14px;
+
+//   @media (min-width: $tablet-width) {
+//     width: 193px;
+//   }
+
+//   @media (min-width: $desktop-width) {
+//     width: 328px;
+//   }
+// }

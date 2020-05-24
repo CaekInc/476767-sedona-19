@@ -1,0 +1,152 @@
+.visited-block {
+  @media (min-width: $tablet-width) {
+    margin-top: 23px;
+    margin-bottom: 69px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 54px;
+    margin-bottom: 69px;
+    width: 100%;
+  }
+}
+
+.visited-block__wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 313px;
+  align-content: space-between;
+  margin: 0 6%;
+  margin-bottom: 24px;
+
+
+  @media (min-width: $tablet-width) {
+    min-height: 144px;
+    margin: 0 20%;
+    margin-top: 43px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 57px;
+    margin-top: 42px;
+    min-height: auto;
+    justify-content: space-evenly;
+  }
+}
+
+.visited-block__heading {
+  margin-top: 19px;
+
+  @media (min-width: $tablet-width) {
+    @include reset-margin;
+
+    margin: 0 auto;
+    width: 278px;
+
+    &::before {
+      content: "";
+      height: 1px;
+      background-color: $biege-color;
+      position: absolute;
+      width: 130px;
+      left: 15%;
+      margin-top: 25px;
+    }
+
+    &::after {
+      content: "";
+      height: 1px;
+      background-color: $biege-color;
+      position: absolute;
+      width: 130px;
+      right: 15%;
+      // margin-top: 10px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      width: 260px;
+    }
+
+    &::after {
+      width: 260px;
+    }
+  }
+}
+
+.visited-block__container {
+  display: flex;
+  align-items: center;
+  // margin-left: 20px;
+  // margin-top: 27px;
+
+  & input {
+    appearance: none;
+    width: 46px;
+    height: 46px;
+    background-color: $biege-color;
+    border: 5px solid $biege-color;
+    box-sizing: content-box;
+    border-radius: 10px;
+  }
+
+  &:first-child {
+    margin-top: 18px;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include reset-margin;
+
+    &:nth-child(2) {
+      margin-right: 15px;
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    @include reset-margin;
+
+    &:nth-child(2) {
+      margin-right: 0;
+    }
+  }
+}
+
+
+.visited-block__label {
+  // margin-left: 27px;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: none;
+  padding-left: 24px;
+}
+
+.visited-block__checkbox {
+  outline: none;
+
+  &:checked {
+    background-image: url("../img/icon-tick.svg");
+    background-repeat: no-repeat;
+    background-size: 24px 16px;
+    background-position: center;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $blue-button__disabled;
+    border-color: $blue-button__disabled;
+  }
+
+  &:active {
+    background-color: #d5d5d5;
+    border-color: #d5d5d5;
+  }
+}

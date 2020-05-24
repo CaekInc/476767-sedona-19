@@ -1,0 +1,14 @@
+.hashtag {
+  font-weight: bold;
+  font-stretch: normal;
+  font-size: 21px;
+
+  @include reset-margin;
+}
+
+
+.hashtag__text {
+  @media (min-width: $desktop-width) {
+    margin-right: 27px;
+  }
+}

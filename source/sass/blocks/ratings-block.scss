@@ -1,0 +1,118 @@
+.ratings-block {
+  @media (min-width: $tablet-width) {
+    order: -1;
+    width: 50%;
+    flex-direction: column;
+
+    &::after {
+      content: "";
+      width: 1px;
+      height: 292px;
+      background-color: $biege-color;
+      left: 50%;
+      position: absolute;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    @include reset-margin;
+  }
+}
+
+.ratings-block__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+  min-height: 192px;
+  margin: 0 6%;
+  margin-top: 23px;
+  margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    @include reset-margin;
+
+    margin-left: 16%;
+    min-height: 210px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 21%;
+  }
+}
+
+.ratings-block__container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+
+  & input {
+    appearance: none;
+    width: 54px;
+    height: 54px;
+    background-color: $biege-color;
+    position: relative;
+    border-radius: 50px;
+  }
+
+  @media (min-width: $tablet-width) {
+    // margin-top: 28px;
+  }
+}
+
+.ratings-block__label {
+  // margin-right: 25px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: none;
+  margin-left: 9%;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 6%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 4%;
+  }
+}
+
+.ratings-block__radio {
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $blue-button__disabled;
+  }
+
+  &:active {
+    background-color: $grey-color;
+    border: 16px solid #d5d5d5;
+    outline: none;
+  }
+
+
+  &:checked {
+    background-color: $black-color;
+    border: 17px solid $biege-color;
+    outline: none;
+  }
+}
+
+.ratings-block__heading {
+  margin-top: 18px;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    font-size: 21px;
+
+    @include reset-margin;
+
+    margin-bottom: 60px;
+    margin-left: 15.5%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 33%;
+  }
+}
