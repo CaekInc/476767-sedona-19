@@ -93,6 +93,10 @@
   }
 }
 
+.header-nav__toggle_nojs {
+  display: none;
+}
+
 .header-nav__list {
   list-style: none;
   color: $white-color;
