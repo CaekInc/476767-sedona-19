@@ -16,6 +16,7 @@
     background-image: url("../img/bg-intro-triangle-mobile.svg");
     margin-top: auto;
     margin-bottom: -1px;
+    background-repeat: no-repeat;
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
