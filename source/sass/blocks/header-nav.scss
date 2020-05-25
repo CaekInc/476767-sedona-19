@@ -58,7 +58,7 @@
 }
 
 .header-nav_visible {
-  @media (max-width: $tablet-width) {
+  @media (max-width: 767px) {
     display: none;
   }
 }
@@ -91,10 +91,6 @@
   @media (min-width: $tablet-width) {
     display: none;
   }
-}
-
-.header-nav__toggle_nojs {
-  display: none;
 }
 
 .header-nav__list {

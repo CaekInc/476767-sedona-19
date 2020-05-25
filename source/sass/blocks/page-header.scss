@@ -19,12 +19,9 @@
 }
 
 .page-header__logo {
-  margin-right: 18.3%;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    @include reset-margin;
-
-    margin: 0 auto;
     margin-top: -56px;
   }
 }
@@ -51,8 +48,9 @@
   border: none;
   fill: $blue-color;
   cursor: pointer;
-  margin-right: 6%;
-  margin-bottom: 30px;
+  position: absolute;
+  right: 6%;
+  top: 18px;
   outline: none;
 
   &:hover,
@@ -71,6 +69,32 @@
 }
 
 .page-header__toggle_hide {
-  fill: $white-color;
+  @include reset-margin;
+
+  position: absolute;
+  right: 7%;
+  top: 17px;
   outline: none;
+  z-index: 2;
+  background-color: transparent;
+  border: none;
+
+  &:active {
+    fill: #a7cae0;
+    outline: none;
+  }
+
+  &:hover,
+  &:focus {
+    fill: #cde1ed;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+
+.page-header__toggle_nojs {
+  display: none;
 }
