@@ -2,11 +2,11 @@
 @import "font.scss";
 @import "globals.scss";
 @import "_mixins.scss";
+@import "normalize.scss";
+@import "visually-hidden.scss";
 @import "blocks/wrapper.scss";
 @import "blocks/page-header.scss";
 @import "blocks/header-nav.scss";
-@import "normalize.scss";
-@import "visually-hidden.scss";
 @import "blocks/meeting.scss";
 @import "blocks/advantages.scss";
 @import "blocks/bluecard.scss";

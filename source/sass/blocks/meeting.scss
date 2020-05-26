@@ -5,9 +5,10 @@
   background-repeat: no-repeat;
   display: flex;
   flex-wrap: wrap;
-  margin-top: -29px;
+  margin-top: -30px;
   width: 100%;
   background-color: $blue-color;
+  background-position: bottom;
 
   &::after {
     content: "";

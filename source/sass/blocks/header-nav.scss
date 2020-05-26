@@ -63,36 +63,6 @@
   }
 }
 
-.header-nav__toggle {
-  @include reset-margin;
-  display: flex;
-  z-index: 2;
-  // margin-bottom: -56px;
-  // margin-left: auto;
-  // margin-right: 6%;
-  cursor: pointer;
-  position: absolute;
-  border: none;
-  background-color: transparent;
-  fill: $white-color;
-  top: 13px;
-  left: 277px;
-
-  &:active {
-    fill: #a7cae0;
-    outline: none;
-  }
-
-  &:hover,
-  &:focus {
-    fill: #cde1ed;
-  }
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
 .header-nav__list {
   list-style: none;
   color: $white-color;

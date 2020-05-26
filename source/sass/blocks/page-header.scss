@@ -52,11 +52,13 @@
   right: 6%;
   top: 18px;
   outline: none;
+  // background-image: url("../img/icon-menu.svg");
+  // background-repeat: no-repeat;
 
-  &:hover,
-  &:focus {
-    fill: #b3d1e4;
-  }
+  // &:hover,
+  // &:focus {
+  //   fill: #b3d1e4;
+  // }
 
   &:active {
     fill: #d9e8f1;
@@ -71,6 +73,8 @@
 .page-header__toggle_hide {
   @include reset-margin;
 
+  width: 22px;
+  height: 22px;
   position: absolute;
   right: 7%;
   top: 17px;
@@ -78,17 +82,19 @@
   z-index: 2;
   background-color: transparent;
   border: none;
-  fill: $white-color;
+  fill: transparent;
+  background-image: url("../img/icon-cross.svg");
+  background-repeat: no-repeat;
 
   &:active {
-    fill: #a7cae0;
+    opacity: 0.3;
     outline: none;
   }
 
-  &:hover,
-  &:focus {
-    fill: #cde1ed;
-  }
+  // &:hover,
+  // &:focus {
+  //   fill: #cde1ed;
+  // }
 
   @media (min-width: $tablet-width) {
     display: none;
