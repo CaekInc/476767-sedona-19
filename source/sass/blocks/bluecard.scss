@@ -86,7 +86,7 @@
     background-image: url("../img/bg-triangle.svg");
     background-size: contain;
     background-repeat: no-repeat;
-    margin-top: -14px;
+    margin-top: -15px;
   }
 
   @media (min-width: $tablet-width) {
@@ -101,7 +101,7 @@
 
 .bluecard__text_firstcard {
   width: 275px;
-  padding-bottom: 36px;
+  // padding-bottom: 36px;
 
   @media (min-width: $tablet-width) {
     width: 167px;
@@ -115,7 +115,7 @@
 }
 
 .bluecard__heading_firstcard {
-  padding-top: 20px;
+  padding-top: 25px;
 
   @media (min-width: $tablet-width) {
     padding-top: 0;

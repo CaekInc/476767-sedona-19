@@ -8,7 +8,7 @@
 .advantages__heading {
   width: 255px;
   margin: 0 auto;
-  margin-top: 43px;
+  margin-top: 41px;
   line-height: 33px;
 
   @media (min-width: $tablet-width) {
@@ -74,5 +74,6 @@
   @media (max-width: $tablet-width) {
     padding-top: 10px;
     line-height: 28px;
+    margin-bottom: 13px;
   }
 }
