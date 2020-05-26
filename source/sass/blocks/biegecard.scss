@@ -5,14 +5,15 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  border-bottom: 1px solid $biege-color;
+  align-items: flex-start;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.3);
 
   @media (min-width: $tablet-width) {
     width: 256px;
     min-height: 256px;
     border: none;
     flex-direction: column;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -28,7 +29,7 @@
 
   @include reset-margin;
 
-  padding-top: 20px;
+  margin-top: 27px;
 
   @media (min-width: $tablet-width) {
     @include reset-margin;
@@ -44,6 +45,7 @@
   width: 100%;
 
   @include reset-margin;
+  margin-bottom: 9px;
 
   @media (min-width: $tablet-width) {
     @include reset-margin;
@@ -60,7 +62,7 @@
   color: $grey-color;
 
   @include reset-margin;
-  padding-bottom: 22px;
+  margin-bottom: 16px;
 
   @media (min-width: $tablet-width) {
     @include reset-margin;

@@ -114,8 +114,12 @@
   }
 }
 
+.bluecard__nubmer_first {
+  margin-bottom: 6px;
+}
+
 .bluecard__heading_firstcard {
-  padding-top: 25px;
+  padding-top: 28px;
 
   @media (min-width: $tablet-width) {
     padding-top: 0;

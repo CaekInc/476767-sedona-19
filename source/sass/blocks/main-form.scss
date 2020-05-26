@@ -11,9 +11,12 @@
 
 .main-form__heading {
   font-size: 21px;
-  margin-top: 26px;
+  margin-top: 28px;
+  margin-bottom: 19px;
 
   @media (min-width: $tablet-width) {
+    @include reset-margin;
+
     font-size: 30px;
     margin-top: 50px;
   }
@@ -48,7 +51,7 @@
   text-transform: uppercase;
   cursor: pointer;
   border: none;
-  margin-top: 20px;
+  margin-top: 21px;
   text-align: center;
 
 
