@@ -36,7 +36,6 @@
 
     font-size: 21px;
     width: 120px;
-    padding-top: 5px;
     line-height: 26px;
   }
 }
@@ -72,7 +71,17 @@
 
   @media (min-width: $desktop-width) {
     width: 283px;
-    padding-bottom: 20px;
+    padding-bottom: 19px;
+  }
+}
+
+.biegecard__text_middlecard {
+  @media (min-width: $tablet-width) {
+    width: 140px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 275px;
   }
 }
 
@@ -86,5 +95,9 @@
 
   @media (min-width: $tablet-width) {
     width: 158px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 275px;
   }
 }

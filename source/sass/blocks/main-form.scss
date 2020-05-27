@@ -18,7 +18,7 @@
     @include reset-margin;
 
     font-size: 30px;
-    margin-top: 50px;
+    margin-top: 55px;
   }
 }
 
@@ -29,7 +29,8 @@
 
   @media (min-width: $tablet-width) {
     width: 600px;
-    line-height: 20px;
+    margin-top: 33px;
+    line-height: 23px;
   }
 
   @media (min-width: $desktop-width) {
@@ -62,11 +63,11 @@
 
     width: 458px;
     height: 58px;
-    margin-top: 31px;
+    margin-top: 28px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 37px;
+    margin-top: 34px;
   }
 }
 

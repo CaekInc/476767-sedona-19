@@ -31,8 +31,9 @@
     @include reset-margin;
 
     font-size: 21px;
-    margin-top: 40%;
+    margin-top: 38%;
     margin-bottom: 20px;
+    line-height: 27px;
   }
 
   @media (min-width: $desktop-width) {
@@ -74,7 +75,7 @@
 
     background-size: 72px 72px;
     background-position-x: 50%;
-    background-position-y: 24%;
+    background-position-y: 23%;
   }
 
   @media (min-width: $desktop-width) {
@@ -95,7 +96,7 @@
 
     background-size: 64px 75px;
     background-position-x: 50%;
-    background-position-y: 23%;
+    background-position-y: 22%;
     order: 1;
   }
 }
@@ -121,7 +122,7 @@
 
     background-size: 77px 68px;
     background-position-x: 50%;
-    background-position-y: 25%;
+    background-position-y: 24%;
   }
 }
 

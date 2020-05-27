@@ -71,7 +71,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 250px;
+    width: 230px;
   }
 }
 
@@ -116,6 +116,10 @@
 
 .bluecard__nubmer_first {
   margin-bottom: 6px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 23px;
+  }
 }
 
 .bluecard__heading_firstcard {

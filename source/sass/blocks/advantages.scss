@@ -19,8 +19,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 31px;
-    margin-bottom: 35px;
+    margin-top: 34px;
+    margin-bottom: 32px;
     line-height: 33px;
   }
 }
@@ -79,5 +79,9 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 25px;
   }
 }
