@@ -20,6 +20,11 @@
   @media (min-width: $tablet-width) {
     padding-left: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 21px;
+    padding-bottom: 2px;
+  }
 }
 
 .photo-block__wrapper {
@@ -77,11 +82,13 @@
 
   @include reset-margin;
 
-  margin-top: -5px;
+  margin-top: -9px;
   padding-bottom: 5px;
+  line-height: 20px;
 
   @media (min-width: $tablet-width) {
     @include reset-margin;
+    line-height: inherit;
   }
 
   @media (min-width: $desktop-width) {
@@ -174,7 +181,7 @@
 
   @media (min-width: $desktop-width) {
     width: 100%;
-    margin-top: 72px;
+    margin-top: 71px;
     height: 400px;
   }
 }

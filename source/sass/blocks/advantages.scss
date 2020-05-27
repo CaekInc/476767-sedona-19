@@ -12,7 +12,7 @@
   line-height: 33px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 30px;
+    margin-top: 35px;
     width: 600px;
     margin-bottom: 30px;
     line-height: 37px;
@@ -75,5 +75,9 @@
     padding-top: 10px;
     line-height: 28px;
     margin-bottom: 13px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 23px;
   }
 }

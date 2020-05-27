@@ -13,17 +13,17 @@
 }
 
 .photo__heading {
-  margin-top: 40px;
+  margin-top: 39px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
-    margin-top: 67px;
+    margin-top: 75px;
     font-size: 30px;
-    margin-bottom: 7px;
+    margin-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 102px;
+    margin-top: 111px;
   }
 }
 
@@ -33,16 +33,18 @@
   font-size: 14px;
   line-height: 24px;
   color: $grey-color;
-  margin-bottom: 23px;
+  margin-bottom: 25px;
+  margin-top: 11px;
 
   @media (min-width: $tablet-width) {
     width: 438px;
     margin-bottom: 0;
+    margin-top: 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 428px;
     margin: 0 10%;
-    padding-top: 15px;
+    padding-top: 1px;
   }
 }

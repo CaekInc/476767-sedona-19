@@ -1,17 +1,17 @@
 .form-heading {
   text-align: center;
   margin: 0 auto;
-  margin-top: 41px;
+  margin-top: 39px;
   margin-bottom: 18px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 66px;
+    margin-top: 74px;
     margin-bottom: 74px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 102px;
-    margin-bottom: 60px;
+    margin-top: 111px;
+    margin-bottom: 59px;
   }
 }
 
@@ -22,7 +22,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
-    margin-bottom: 22px;
+    margin-bottom: 31px;
   }
 }
 
